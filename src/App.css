@@ -45,3 +45,8 @@ form{
   width: 50%;
   margin-bottom: 20p;
 }
+.four-services-div{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
