@@ -4,6 +4,7 @@ import Home from "./pages/Home";
 import SingleRoom from "./pages/SingleRoom";
 import Rooms from "./pages/Rooms";
 import Error from "./pages/Error";
+import { RoomProvider } from "./context";
 import {
   BrowserRouter as Router,
   Routes,
@@ -13,17 +14,20 @@ import {
 
 function App() {
   return (
-    <div className="App">
+   <RoomProvider>
       <Router>
         <Navbar />
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/rooms" element={<Rooms />} />
-          <Route path="/rooms/:slug" element={<SingleRoom />} />
+          <Route path="/rooms/:id" element={<SingleRoom />} />
           <Route path="*" element={<Error/>} />
         </Routes>
       </Router>
-    </div>
+
+   </RoomProvider>
+     
+   
   );
 }
 
