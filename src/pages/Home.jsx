@@ -6,7 +6,9 @@ const Home = () => {
   return (
     <div>
         
-        HOME
+        <div className="first-back">
+      
+        </div>
         <Services/>
         <FeaturedRooms/>
     </div>

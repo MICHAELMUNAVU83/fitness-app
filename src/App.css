@@ -1,54 +1,171 @@
-.App {
+@import url('https://fonts.googleapis.com/css2?family=Amaranth&family=Courgette&family=Crete+Round&family=Inter:wght@200;300&family=Josefin+Sans:wght@100&family=Kanit:ital,wght@1,300;1,400&family=Kdam+Thmor+Pro&family=Lato:wght@300&family=Lobster+Two:ital@1&family=Mouse+Memoirs&family=Nothing+You+Could+Do&family=Noto+Sans:wght@700&family=Roboto+Mono:ital,wght@1,500&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+}
+.first-back{
+  background-image: url("./images/details-4.jpeg");
+  background-repeat: no-repeat;
+  height: 31rem;
+  background-attachment: fixed;
+}
+
+.logo{
+  height: 40px;
+  width: 140px;
+  margin-top: 10px;
+  border-radius: 20px;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -ms-border-radius: 20px;
+  -o-border-radius: 20px;
+}
+.navlink{
+  text-decoration: none;
+  margin-left: 20px;
+  font-size: 2rem;
+  color: #8c756a;
+  font-weight: bolder;
+  font-family: 'Amaranth', sans-serif;
   text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-a{
-  margin-right: 20px;
-}
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+}
+.servicesh4{
+  text-align: center;
+  font-family: 'Noto Sans', sans-serif;
+  font-size: 2rem;
+}
+.service-line{
+  border: 2px solid #8c756a ;
+  width: 30%;
+  margin-left: 35%;
+  margin-bottom: 1%;
 }
 
-.App-link {
-  color: #61dafb;
-}
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
-form{
-  display: flex;
-  flex-direction: column;
-  justify-content: space-evenly;
-  width: 50%;
-  margin-bottom: 20p;
-}
 .four-services-div{
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
+  background-color:#8c756a;
+  height: 150px;
+ padding-top: 5%;
+}
+.four-services-div .each-service{
+  align-items: center;
+  text-align: center;
+}
+.four-services-div .each-service i{
+  color: white;
+ font-size: 50px;
+}
+.four-services-div .each-service p{
+  color: white;
+  font-family: 'Noto Sans', sans-serif;
+}
+.featured-text{
+  display: flex;
+  justify-content: center;
+  font-family: 'Noto Sans', sans-serif;
+  font-size: 1.5rem;
+
+}
+.featured-line{
+  border: 2px solid #8c756a ;
+  width: 30%;
+  margin-left: 35%;
+  margin-bottom: 1%;
+
+}
+.featured-rooms{
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+
+}
+.featured-rooms .each-featured{
+  width: 22%;
+  height: 100px;
+  margin-right: 2%;
+  margin-left: 1%;
+}
+.featured-rooms .each-featured .show-more-hover{
+  position: absolute;
+  top: 150%;
+  margin-left: 2%;
+  font-family: 'Noto Sans', sans-serif;
+  font-weight: bolder;
+  text-decoration: none;
+  font-size: 25px;
+  background-color: #c4a99c;
+  padding-top: 120px;
+  padding-bottom: 100px;
+  padding-left: 40px;
+  padding-right: 40px;
+  opacity: 0;
+  box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+-webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+-moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+  
+}
+.featured-rooms .each-featured .show-more-hover:hover{
+  opacity: 70%;
+  transition-duration: 50ms;
+  color: black;
+}
+.featured-rooms .each-featured img{
+  width: 18rem;
+  height: 20rem;
+  position: relative;
+}
+.featured-rooms .each-featured .about-spans{
+  position: absolute;
+  top: 140.5%;
+  background-color:#8c756a;
+  color: white;
+  font-family: 'Lobster Two', cursive;
+  padding-top: 9px;
+  padding-right: 10px;
+  border-bottom-right-radius:20px ;
+}
+.featured-rooms .each-featured .about-spans .label-for{
+  font-family: 'Kdam Thmor Pro', sans-serif;
+}
+
+.detailsimg{
+  width: 200px;
+}
+.description-info{
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+
+}
+.description{
+  width: 40%;
+  margin-right:30% ;
+}
+.info{
+  margin-right: 20%;
+
+}
+.info > div{
+  margin-bottom: 10px;
+  
+}
+.extras h2{
+  margin-left:2%;
+}
+.extras ul{
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction:row ;
+}
+.extras ul > li{
+  width: 30%;
+  margin-left: 2%
 }
 .room-img{
   height: 100px;
@@ -57,3 +174,5 @@ form{
   background-color: beige;
   margin-bottom: 20px;
 }
+
+

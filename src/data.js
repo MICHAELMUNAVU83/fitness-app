@@ -38,7 +38,7 @@ export default [
         "Full-sized, pH-balanced toiletries",
         "Complimentary refreshments",
         "Adequate safety/security",
-        "Internet",
+        "Very Fast Internet Connectivity",
         "Comfortable beds"
       ],
       images: [
@@ -95,7 +95,7 @@ export default [
         "Full-sized, pH-balanced toiletries",
         "Complimentary refreshments",
         "Adequate safety/security",
-        "Internet",
+        "Very Fast Internet Connectivity",
         "Comfortable beds"
       ],
       images: [
@@ -152,7 +152,7 @@ export default [
         "Full-sized, pH-balanced toiletries",
         "Complimentary refreshments",
         "Adequate safety/security",
-        "Internet",
+        "Very Fast Internet Connectivity",
         "Comfortable beds"
       ],
       images: [
@@ -209,7 +209,7 @@ export default [
         "Full-sized, pH-balanced toiletries",
         "Complimentary refreshments",
         "Adequate safety/security",
-        "Internet",
+        "Very Fast Internet Connectivity",
         "Comfortable beds"
       ],
       images: [
@@ -266,7 +266,7 @@ export default [
         "Full-sized, pH-balanced toiletries",
         "Complimentary refreshments",
         "Adequate safety/security",
-        "Internet",
+        "Very Fast Internet Connectivity",
         "Comfortable beds"
       ],
       images: [
@@ -323,7 +323,7 @@ export default [
         "Full-sized, pH-balanced toiletries",
         "Complimentary refreshments",
         "Adequate safety/security",
-        "Internet",
+        "Very Fast Internet Connectivity",
         "Comfortable beds"
       ],
       images: [
@@ -380,7 +380,7 @@ export default [
         "Full-sized, pH-balanced toiletries",
         "Complimentary refreshments",
         "Adequate safety/security",
-        "Internet",
+        "Very Fast Internet Connectivity",
         "Comfortable beds"
       ],
       images: [
@@ -437,7 +437,7 @@ export default [
         "Full-sized, pH-balanced toiletries",
         "Complimentary refreshments",
         "Adequate safety/security",
-        "Internet",
+        "Very Fast Internet Connectivity",
         "Comfortable beds"
       ],
       images: [
@@ -494,7 +494,7 @@ export default [
         "Full-sized, pH-balanced toiletries",
         "Complimentary refreshments",
         "Adequate safety/security",
-        "Internet",
+        "Very Fast Internet Connectivity",
         "Comfortable beds"
       ],
       images: [
@@ -551,7 +551,7 @@ export default [
         "Full-sized, pH-balanced toiletries",
         "Complimentary refreshments",
         "Adequate safety/security",
-        "Internet",
+        "Very Fast Internet Connectivity",
         "Comfortable beds"
       ],
       images: [
@@ -608,7 +608,7 @@ export default [
         "Full-sized, pH-balanced toiletries",
         "Complimentary refreshments",
         "Adequate safety/security",
-        "Internet",
+        "Very Fast Internet Connectivity",
         "Comfortable beds"
       ],
       images: [
@@ -665,7 +665,7 @@ export default [
         "Full-sized, pH-balanced toiletries",
         "Complimentary refreshments",
         "Adequate safety/security",
-        "Internet",
+        "Very Fast Internet Connectivity",
         "Comfortable beds"
       ],
       images: [
@@ -722,7 +722,7 @@ export default [
         "Full-sized, pH-balanced toiletries",
         "Complimentary refreshments",
         "Adequate safety/security",
-        "Internet",
+        "Very Fast Internet Connectivity",
         "Comfortable beds"
       ],
       images: [

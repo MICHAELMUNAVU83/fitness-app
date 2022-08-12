@@ -1,5 +1,5 @@
 import React from 'react'
-import logo from "../images/logo.svg"
+import logo from "../images/logos.png"
 import {Link} from "react-router-dom"
 
 const Navbar = () => {
@@ -7,13 +7,14 @@ const Navbar = () => {
     <div>
         <nav>
             <Link to="/">
-            <img src={logo} alt="logo" />
+            <img className="logo" src={logo} alt="logo" />
 
             </Link>
-            <Link to="/">HOME</Link>
-            <Link to="/rooms">Rooms</Link>
+            <Link className="navlink" to="/">Home</Link>
+            <Link className ="navlink" to="/rooms">Rooms</Link>
    
         </nav>
+        <hr />
        
     </div>
   )

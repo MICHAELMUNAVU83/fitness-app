@@ -4,22 +4,23 @@ import { FaCocktail, FaHiking, FaShuttleVan, FaBeer } from "react-icons/fa";
 const Services = () => {
   return (
     <div>
-      <h4>SERVICES</h4>
+      <h2 className="servicesh4">SERVICES</h2>
+      <div className="service-line"></div>
       <div className="four-services-div">
-        <div>
-          <FaCocktail />
+        <div className="each-service">
+          <i> <FaCocktail /></i>
           <p>"Lorem ipsum dolor sit amet, consectetur adipiscing eli</p>
         </div>
-        <div>
-          <FaHiking />
+        <div className="each-service">
+         <i><FaHiking /></i> 
           <p>"Lorem ipsum dolor sit amet, consectetur adipiscing eli</p>
         </div>
-        <div>
-          <FaShuttleVan />
+        <div className="each-service">
+          <i><FaShuttleVan /> </i>
           <p>"Lorem ipsum dolor sit amet, consectetur adipiscing eli</p>
         </div>
-        <div>
-          <FaBeer />
+        <div className="each-service">
+          <i> <FaBeer /></i>
           <p>"Lorem ipsum dolor sit amet, consectetur adipiscing eli</p>
         </div>
       </div>
