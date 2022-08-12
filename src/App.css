@@ -50,3 +50,10 @@ form{
   flex-direction: row;
   justify-content: space-evenly;
 }
+.room-img{
+  height: 100px;
+}
+.eachroom{
+  background-color: beige;
+  margin-bottom: 20px;
+}

@@ -18,7 +18,7 @@ import img12 from "./images/room-12.jpeg";
 export default [
   {
     sys: {
-      id: "1"
+      item_id: "1"
     },
     fields: {
       name: "single economy",
@@ -75,7 +75,7 @@ export default [
   },
   {
     sys: {
-      id: "2"
+      item_id: "2"
     },
     fields: {
       name: "single basic",
@@ -132,7 +132,7 @@ export default [
   },
   {
     sys: {
-      id: "3"
+      item_id: "3"
     },
     fields: {
       name: "single standard",
@@ -189,7 +189,7 @@ export default [
   },
   {
     sys: {
-      id: "4"
+      item_id: "4"
     },
     fields: {
       name: "single deluxe",
@@ -246,7 +246,7 @@ export default [
   },
   {
     sys: {
-      id: "5"
+      item_id: "5"
     },
     fields: {
       name: "double economy",
@@ -303,7 +303,7 @@ export default [
   },
   {
     sys: {
-      id: "6"
+      item_id: "6"
     },
     fields: {
       name: "double basic",
@@ -360,7 +360,7 @@ export default [
   },
   {
     sys: {
-      id: "7"
+     item_id: "7"
     },
     fields: {
       name: "double standard",
@@ -417,7 +417,7 @@ export default [
   },
   {
     sys: {
-      id: "8"
+      item_id: "8"
     },
     fields: {
       name: "double deluxe",
@@ -474,7 +474,7 @@ export default [
   },
   {
     sys: {
-      id: "9"
+      item_id: "9"
     },
     fields: {
       name: "family economy",
@@ -531,7 +531,7 @@ export default [
   },
   {
     sys: {
-      id: "10"
+      item_id: "10"
     },
     fields: {
       name: "family basic",
@@ -588,7 +588,7 @@ export default [
   },
   {
     sys: {
-      id: "11"
+      item_id: "11"
     },
     fields: {
       name: "family standard",
@@ -645,7 +645,7 @@ export default [
   },
   {
     sys: {
-      id: "12"
+      item_id: "12"
     },
     fields: {
       name: "family deluxe",
@@ -702,7 +702,7 @@ export default [
   },
   {
     sys: {
-      id: "13"
+      item_id: "13"
     },
     fields: {
       name: "presidential",
