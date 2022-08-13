@@ -1,7 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Amaranth&family=Courgette&family=Crete+Round&family=Inter:wght@200;300&family=Josefin+Sans:wght@100&family=Kanit:ital,wght@1,300;1,400&family=Kdam+Thmor+Pro&family=Lato:wght@300&family=Lobster+Two:ital@1&family=Mouse+Memoirs&family=Nothing+You+Could+Do&family=Noto+Sans:wght@700&family=Roboto+Mono:ital,wght@1,500&display=swap');
-
-*{
-  margin: 0;
+@import url('https://fonts.googleapis.com/css2?family=Allura&family=Amaranth&family=Courgette&family=Crete+Round&family=Inter:wght@200;300&family=Istok+Web:wght@700&family=Josefin+Sans:wght@100&family=Kanit:ital,wght@1,300;1,400&family=Kdam+Thmor+Pro&family=Lato:wght@300&family=Lobster+Two:ital@1&family=Mouse+Memoirs&family=Nothing+You+Could+Do&family=Noto+Sans:wght@700&family=Roboto+Mono:ital,wght@1,500&display=swap');
+*{  margin: 0;
   padding: 0;
 }
 .first-back{
@@ -9,6 +7,20 @@
   background-repeat: no-repeat;
   height: 31rem;
   background-attachment: fixed;
+}
+.first-back-text{
+position: absolute;
+ margin-left: 35%;
+ padding: 10px;
+ font-size: 3rem;
+ top: 30%;
+ opacity: 70%;
+ color: white;
+ 
+}
+.first-back-text .buddy{
+  font-family: 'Allura', cursive;
+
 }
 
 .logo{
@@ -140,14 +152,16 @@
   display: flex;
   justify-content: center;
   gap: 2rem;
+  margin-top: 2%;
+  font-family: 'Istok Web', sans-serif;
 
 }
 .description{
-  width: 40%;
+  width: 35%;
   margin-right:30% ;
 }
 .info{
-  margin-right: 20%;
+  margin-right: 10%;
 
 }
 .info > div{
@@ -167,12 +181,177 @@
   width: 30%;
   margin-left: 2%
 }
-.room-img{
-  height: 100px;
+.details-banner-img{
+  height: 31rem;
+  width: 100%;
+  position: relative;
+  background-attachment: fixed;
+}
+.details-banner .backdetails{
+  position: absolute;
+  top: 8%;
+  font-size: 5rem;
+}
+.details-banner .backdetails a{
+  color: #8c756a;
+}
+.details-banner-inner{
+  position: absolute;
+  top: 30%;
+  left: 30%;
+  padding: 50px;
+  font-size: 70px;
+  opacity: 70%;
+  font-family: 'Lato', sans-serif;
+  background-color: #c4a99c;
+}
+.details-banner-inner .details-line{
+  border: 2px solid black;
+  margin-top: 1rem;
+}
+
+.extra-images-div{
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.extra-image{
+  width: 23%;
+  height: 20rem;
+  margin-right: 1%;
+  margin-left:1% ;
+}
+.allrooms{
+  display: flex;
+  flex-wrap: wrap;
 }
 .eachroom{
-  background-color: beige;
-  margin-bottom: 20px;
+  margin-right: 2%;
+  background-color: #8c756a;
+  margin-bottom: 1%;
+}
+.eachroom .room-img{
+  height: 14rem;
+ 
+ 
+}
+.eachroom .room-spans{
+ 
+  color: white;
+  font-family: 'Lobster Two', cursive;
+  font-size: 20px;
+  
+}
+.eachroom .room-spans .label-for{
+  font-family: 'Kdam Thmor Pro', sans-serif;
+
+}
+.inputCommentsdiv{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  text-align: center;
+
+}
+.inputCommentsdiv .addreview{
+  text-align: center;
+  text-decoration: underline;
+  margin-bottom: 1%;
+
+}
+.inputCommentsdiv .actualinputs >input{
+  outline: none;
+  margin-right: 4%;
+  width: 30%;
+  height: 2rem;
+  margin-bottom: 1%;
+
+}
+.inputCommentsdiv .postComment{
+  background-color: #8c756a;
+  border: none;
+  font-weight: bolder;
+  padding: 10px;
+  border-radius: 20px;
+  color: white;
+  width: 30%;
+  font-size: 20px;
+  margin-left: 35%;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -ms-border-radius: 20px;
+  -o-border-radius: 20px;
+}
+.all-comments-div{
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 1%;
+  margin-left: 6%;
+
+}
+.each-comment{
+  width: 25%;
+  border-bottom-left-radius: 20px;
+  border-top-right-radius:20px ;
+  background-color: #c5b2a7;
+  margin-right: 1%;
+  margin-left: 1%;
+  font-size: 20px;
+  padding: 10px;
+  margin-bottom: 1%;
+ 
+
+}
+.each-comment-user{
+  font-family: 'Kdam Thmor Pro', sans-serif;
+  
+}
+.each-comment-comment{
+  font-family: 'Courgette', cursive;
+}
+.filter-rooms-div{
+  margin-top: 1%;
+  margin-bottom: 1%;
+
+}
+.filter-rooms-div>input{
+ height: 30px;
+ margin-right: 2%;
+ width: 20%;
+
+}
+.footer-div{
+  margin-top: 20%;
+  text-align: center;
+  background-image: url("./images/details-1.jpeg");
+  background-attachment: fixed;
+  color:black;
+}
+footer{
+  background-color: #8c756a;
+  width: 40%;
+  margin-left: 30%;
+  opacity: 70%;
+  border-bottom-left-radius: 20px;
+  border-top-right-radius: 20px;
 }
 
-
+footer .travelbuddy{
+  color: white;
+  
+}
+footer .travelbuddy .travel{
+  font-weight: bolder;
+  font-size: 40px;
+}
+footer .travelbuddy .buddy{
+  font-family: 'Allura', cursive;
+  margin-left: 1%;
+  font-size: 30px;
+}
+.social-icons > a{
+  color: black;
+  font-size: 30px;
+  text-decoration: none;
+}

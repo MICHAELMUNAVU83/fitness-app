@@ -1,18 +1,22 @@
-import React from 'react'
-import FeaturedRooms from '../components/FeaturedRooms'
-import Services from '../components/Services'
+import React from "react";
+import FeaturedRooms from "../components/FeaturedRooms";
+import Services from "../components/Services";
+import Footer from "./Footer";
 
 const Home = () => {
   return (
     <div>
-        
-        <div className="first-back">
-      
+      <div className="first-back">
+        <div className="first-back-text">
+          <h1 className="travel">TRAVEL</h1>
+          <h1 className="buddy">buddy</h1>
         </div>
-        <Services/>
-        <FeaturedRooms/>
+      </div>
+      <Services />
+      <FeaturedRooms />
+      <Footer/>
     </div>
-  )
-}
+  );
+};
 
-export default Home
+export default Home;
