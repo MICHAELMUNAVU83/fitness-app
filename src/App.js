@@ -11,6 +11,7 @@ import {
   Route,
   
 } from "react-router-dom";
+import SavedHouses from "./pages/SavedHouses";
 
 function App() {
   return (
@@ -20,6 +21,7 @@ function App() {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/rooms" element={<Rooms />} />
+          <Route path="/saved" element={<SavedHouses />} />
           <Route path="/rooms/:id" element={<SingleRoom />} />
           <Route path="*" element={<Error/>} />
         </Routes>

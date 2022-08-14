@@ -37,8 +37,8 @@ const SingleRoom = () => {
     );
 
     const fetchedComment = await fetchcomment.text();
-    setUser(' ')
-    setComment(' ')
+    setUser(" ");
+    setComment(" ");
     getComment();
   };
   const getComment = async () => {
@@ -49,17 +49,14 @@ const SingleRoom = () => {
     const gotComment = await getcomment.json();
     setAllComments(gotComment);
   };
-  useEffect(()=>{
-    getComment()
-  })
-  // useEffect(() => {
-  //   if (allComments.length > 0) {
-  //     getComment();
-  //   }
-  //   else if(performance.navigation.type === 1){
-
-  //   }
-  // },[]);
+  // useEffect(()=>{
+  //   getComment()
+  // })
+  useEffect(() => {
+    if (allComments.length > 0) {
+      getComment();
+    }
+  }, [params.id]);
   const detailsBanner = items.map(
     (item) =>
       item.sys.item_id === params.id && (
@@ -239,11 +236,28 @@ const SingleRoom = () => {
         </div>
       </div>
     ));
+    // const handleCli = (ma)=>{
+    //  let mama= ma.fields.saved 
+    //  mama=!ma.fields.saved
+    //   return mama;
+    // }
+  const buttons = items.map(
+    (item) =>
+     ( !item.fields.saved &&
+      item.sys.item_id === params.id && <button onClick={()=>{
+       let clicked = item.fields.saved
+       clicked = !item.fields.saved
+       const ma = {...item, saved :clicked}
+       console.log(ma)
+      }}>SAVE</button>)
+     
+  );
 
   return (
     <div>
       {detailsBanner}
       {detailsContainer}
+      {buttons}
       {comments}
       <div className="all-comments-div">{lala}</div>
     </div>
