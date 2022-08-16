@@ -5,7 +5,7 @@ import { RoomContext } from '../context'
 function SavedHouses() {
     const items = useContext(RoomContext)
     const saved = items.map(item =>(
-        (item.saved && <div>
+        (!item.saved && <div>
             {item.fields.name}
         </div>)
     ))

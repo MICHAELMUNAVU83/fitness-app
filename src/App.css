@@ -2,6 +2,12 @@
 *{  margin: 0;
   padding: 0;
 }
+.none{
+ margin-right: 2%;
+ height: 100px;
+ 
+
+}
 .first-back{
   background-image: url("./images/details-4.jpeg");
   background-repeat: no-repeat;
@@ -313,14 +319,24 @@ position: absolute;
 .filter-rooms-div{
   margin-top: 1%;
   margin-bottom: 1%;
+  display: flex;
+  justify-content: center;
 
 }
-.filter-rooms-div>input{
- height: 30px;
+.filter-rooms-div>div{
+
  margin-right: 2%;
- width: 20%;
-
 }
+.filter-rooms-div>div>label{
+  font-size: 20px;
+  font-family: 'Istok Web', sans-serif;
+ 
+}
+.filter-rooms-div>div >select{
+  height: 2.5rem;
+  font-family: 'Crete Round', serif;
+}
+
 .footer-div{
   margin-top: 20%;
   text-align: center;
@@ -356,3 +372,12 @@ footer .travelbuddy .buddy{
   text-decoration: none;
 }
 
+.comment-header{
+  text-align: center;
+  margin-top: 1%;
+  margin-bottom: 1%;
+  font-size: 30px;
+  text-decoration: underline;
+  font-family: 'Kdam Thmor Pro', sans-serif;
+
+} 

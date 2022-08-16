@@ -24,7 +24,7 @@ const SingleRoom = () => {
   const postComment = async (e) => {
     e.preventDefault();
     const fetchcomment = await fetch(
-      "https://us-central1-involvement-api.cloudfunctions.net/capstoneApi/apps/paRddRGESsmKHBcX7cmk/comments",
+      "https://us-central1-involvement-api.cloudfunctions.net/capstoneApi/apps/6RgKAhc9OlOvb72H6HaV/comments",
       {
         method: "POST",
         headers: { "Content-Type": "application/json" },
@@ -43,20 +43,20 @@ const SingleRoom = () => {
   };
   const getComment = async () => {
     const getcomment = await fetch(
-      `https://us-central1-involvement-api.cloudfunctions.net/capstoneApi/apps/paRddRGESsmKHBcX7cmk/comments/?item_id=${params.id}`
+      `https://us-central1-involvement-api.cloudfunctions.net/capstoneApi/apps/6RgKAhc9OlOvb72H6HaV/comments/?item_id=${params.id}`
     );
 
     const gotComment = await getcomment.json();
     setAllComments(gotComment);
   };
-  // useEffect(()=>{
-  //   getComment()
-  // })
-  useEffect(() => {
-    if (allComments.length > 0) {
-      getComment();
-    }
-  }, [params.id]);
+  useEffect(()=>{
+    getComment()
+  },[allComments.length])
+  // useEffect(() => {
+  //   if (allComments.length > 0) {
+  //     getComment();
+  //   }
+  // }, [allComments.length]);
   const detailsBanner = items.map(
     (item) =>
       item.sys.item_id === params.id && (
@@ -236,30 +236,17 @@ const SingleRoom = () => {
         </div>
       </div>
     ));
-    // const handleCli = (ma)=>{
-    //  let mama= ma.fields.saved 
-    //  mama=!ma.fields.saved
-    //   return mama;
-    // }
-  const buttons = items.map(
-    (item) =>
-     ( !item.fields.saved &&
-      item.sys.item_id === params.id && <button onClick={()=>{
-       let clicked = item.fields.saved
-       clicked = !item.fields.saved
-       const ma = {...item, saved :clicked}
-       console.log(ma)
-      }}>SAVE</button>)
-     
-  );
+  
 
   return (
     <div>
       {detailsBanner}
       {detailsContainer}
-      {buttons}
       {comments}
-      <div className="all-comments-div">{lala}</div>
+      <div className="comment-header">COMMENTS</div>
+      <div className="all-comments-div">
+        {lala}
+        </div>
     </div>
   );
 };
