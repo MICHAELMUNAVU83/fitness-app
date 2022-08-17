@@ -100,55 +100,38 @@ position: absolute;
   display: flex;
   justify-content: center;
   margin-top: 20px;
+  flex-wrap: wrap;
 
 }
 .featured-rooms .each-featured{
-  width: 22%;
-  height: 100px;
-  margin-right: 2%;
-  margin-left: 1%;
+ background-color: #8c756a;
+  margin: 1%;
+ 
 }
-.featured-rooms .each-featured .show-more-hover{
-  position: absolute;
-  top: 150%;
-  margin-left: 2%;
-  font-family: 'Noto Sans', sans-serif;
-  font-weight: bolder;
-  text-decoration: none;
-  font-size: 25px;
-  background-color: #c4a99c;
-  padding-top: 120px;
-  padding-bottom: 100px;
-  padding-left: 40px;
-  padding-right: 40px;
-  opacity: 0;
-  box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
--webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
--moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
-  
-}
-.featured-rooms .each-featured .show-more-hover:hover{
-  opacity: 70%;
-  transition-duration: 50ms;
-  color: black;
-}
+
 .featured-rooms .each-featured img{
-  width: 18rem;
+ 
   height: 20rem;
-  position: relative;
+ 
+}
+.featured-rooms .each-featured a{
+  text-decoration: none;
 }
 .featured-rooms .each-featured .about-spans{
-  position: absolute;
-  top: 140.5%;
+  
   background-color:#8c756a;
+  text-decoration: none;
   color: white;
+  font-size: 25px;
   font-family: 'Lobster Two', cursive;
-  padding-top: 9px;
-  padding-right: 10px;
-  border-bottom-right-radius:20px ;
+}
+.featured-rooms .each-featured .about-spans :hover{
+  text-decoration: none;
+  color: white;
 }
 .featured-rooms .each-featured .about-spans .label-for{
   font-family: 'Kdam Thmor Pro', sans-serif;
+  text-decoration: none;
 }
 
 .detailsimg{
@@ -204,17 +187,16 @@ position: absolute;
 .details-banner-inner{
   position: absolute;
   top: 30%;
-  left: 30%;
-  padding: 50px;
+  left: 15%;
+  width: 70%;
+  font-weight: bolder;
+  text-align: center;
   font-size: 70px;
   opacity: 70%;
-  font-family: 'Lato', sans-serif;
+  /* font-family: 'Lato', sans-serif; */
   background-color: #c4a99c;
 }
-.details-banner-inner .details-line{
-  border: 2px solid black;
-  margin-top: 1rem;
-}
+
 
 .extra-images-div{
   display: flex;
@@ -266,13 +248,27 @@ position: absolute;
   margin-bottom: 1%;
 
 }
-.inputCommentsdiv .actualinputs >input{
+.inputCommentsdiv .actualinputs{
+  display: flex;
+  justify-content: center;
+}
+.inputCommentsdiv .actualinputs >div{
+  width: 50%;
+}
+.inputCommentsdiv .actualinputs >div >span{
+  font-size: 20px;
+  font-family: 'Istok Web', sans-serif;
+}
+.inputCommentsdiv .actualinputs >div >input{
   outline: none;
-  margin-right: 4%;
-  width: 30%;
+  width: 70%;
   height: 2rem;
   margin-bottom: 1%;
 
+}
+.inputCommentsdiv .post-comment-div{
+  display: flex;
+  justify-content: center;
 }
 .inputCommentsdiv .postComment{
   background-color: #8c756a;
@@ -281,9 +277,10 @@ position: absolute;
   padding: 10px;
   border-radius: 20px;
   color: white;
+  display: flex;
+  justify-content: center;
   width: 30%;
   font-size: 20px;
-  margin-left: 35%;
   -webkit-border-radius: 20px;
   -moz-border-radius: 20px;
   -ms-border-radius: 20px;
@@ -338,7 +335,7 @@ position: absolute;
 }
 
 .footer-div{
-  margin-top: 20%;
+  margin-top: 1%;
   text-align: center;
   background-image: url("./images/details-1.jpeg");
   background-attachment: fixed;
@@ -381,3 +378,65 @@ footer .travelbuddy .buddy{
   font-family: 'Kdam Thmor Pro', sans-serif;
 
 } 
+.save-house-btn button{
+  background-color: #8c756a;
+  border: none;
+  font-weight: bolder;
+  padding: 10px;
+  border-radius: 20px;
+  color: white;
+  width: 25%;
+  font-size: 20px;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -ms-border-radius: 20px;
+  -o-border-radius: 20px;
+  
+}
+.save-house-btn{
+  align-items: center;
+  display: flex;
+  margin-bottom: 1%;
+  margin-top: 1%;
+  justify-content: center;
+}
+.save-house-btn .save-icon{
+ font-size: 20px;
+}
+.no-houses-div{
+  height: 500px;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
+.no-houses-div h3{
+ padding: 100px;
+ font-size: 70px;
+ background-color: #8c756a;
+ opacity: 80%;
+}
+.saved-rooms-div{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+.eachroom-saved{
+ background-color: #8c756a;
+ margin: 1%;
+
+
+}
+.eachroom-saved img{
+  height: 14rem;
+}
+.eachroom-saved .room-spans{
+ 
+  color: white;
+  font-family: 'Lobster Two', cursive;
+  font-size: 20px;
+  
+}
+.eachroom-saved .room-spans .label-for{
+  font-family: 'Kdam Thmor Pro', sans-serif;
+
+}

@@ -1,30 +1,31 @@
-import React, { useContext, useState, useEffect } from "react";
+import React, { useState, useContext, useEffect } from "react";
 import { RoomContext } from "../context";
+import items from "../data";
 import { Link, useParams } from "react-router-dom";
 import { FcCheckmark } from "react-icons/fc";
 import { FaUserCircle } from "react-icons/fa";
+import { MdSaveAlt } from "react-icons/md";
 import { GiSittingDog } from "react-icons/gi";
 import { TiTick } from "react-icons/ti";
 import { AiTwotoneStar, AiOutlineComment } from "react-icons/ai";
-import { IoArrowBackCircleSharp } from "react-icons/io5";
 import {
   MdPriceCheck,
   MdOutlineBedroomChild,
   MdOutlineBedroomParent,
   MdOutlineCancel,
-  MdOutlineFreeBreakfast,
 } from "react-icons/md";
 import { IoMdResize } from "react-icons/io";
 const SingleRoom = () => {
-  const items = useContext(RoomContext);
+  const { addCart } = useContext(RoomContext);
   const params = useParams();
+  const [savedClass, setSavedClass] = useState("save");
   const [comment, setComment] = useState("");
   const [allComments, setAllComments] = useState([]);
   const [user, setUser] = useState("");
   const postComment = async (e) => {
     e.preventDefault();
     const fetchcomment = await fetch(
-      "https://us-central1-involvement-api.cloudfunctions.net/capstoneApi/apps/6RgKAhc9OlOvb72H6HaV/comments",
+      "https://us-central1-involvement-api.cloudfunctions.net/capstoneApi/apps/IXnHl2tjtXcuTuHAlzzN/comments",
       {
         method: "POST",
         headers: { "Content-Type": "application/json" },
@@ -43,15 +44,14 @@ const SingleRoom = () => {
   };
   const getComment = async () => {
     const getcomment = await fetch(
-      `https://us-central1-involvement-api.cloudfunctions.net/capstoneApi/apps/6RgKAhc9OlOvb72H6HaV/comments/?item_id=${params.id}`
+      `https://us-central1-involvement-api.cloudfunctions.net/capstoneApi/apps/IXnHl2tjtXcuTuHAlzzN/comments/?item_id=${params.id}`
     );
-
     const gotComment = await getcomment.json();
     setAllComments(gotComment);
   };
-  useEffect(()=>{
-    getComment()
-  },[allComments.length])
+  useEffect(() => {
+    getComment();
+  }, [allComments.length]);
   // useEffect(() => {
   //   if (allComments.length > 0) {
   //     getComment();
@@ -59,44 +59,34 @@ const SingleRoom = () => {
   // }, [allComments.length]);
   const detailsBanner = items.map(
     (item) =>
-      item.sys.item_id === params.id && (
-        <div className="details-banner">
+      item.item_id === params.id && (
+        <div key={item.item_id} className="details-banner">
           <img
             className="details-banner-img"
-            src={item.fields.images[1].fields.file.url}
+            src={item.images[3]}
             alt="details banner"
           />
           <div className="details-banner-inner">
-            <p>{item.fields.name.toUpperCase()}</p>
+            <p>{item.name.toUpperCase()}</p>
             <p className="details-line"></p>
-          </div>
-          <div className="backdetails">
-            <Link to="/rooms">
-              {" "}
-              <IoArrowBackCircleSharp />
-            </Link>
           </div>
         </div>
       )
   );
   const detailsContainer = items.map(
     (item) =>
-      item.sys.item_id === params.id && (
-        <div key={item.sys.item_id}>
+      item.item_id === params.id && (
+        <div key={item.item_id}>
           <div className="extra-images-div">
-            {item.fields.images.map((image) => (
-              <img
-                className="extra-image"
-                src={image.fields.file.url}
-                alt="uil"
-              />
+            {item.images.map((image) => (
+              <img className="extra-image" src={image} alt="uil" />
             ))}
           </div>
 
           <div className="description-info">
             <div className="description">
               <h2>DESCRIPTION</h2>
-              <p>{item.fields.description}</p>
+              <p>{item.description}</p>
             </div>
             <div className="info">
               <h2>INFO</h2>
@@ -105,49 +95,32 @@ const SingleRoom = () => {
                   {" "}
                   <MdPriceCheck /> PRICE :
                 </span>{" "}
-                <span>{item.fields.price}</span>
+                <span>{item.price}</span>
               </div>
               <div>
                 <span>
                   {" "}
                   <IoMdResize /> SIZE :
                 </span>{" "}
-                <span>{item.fields.size} square ft</span>
+                <span>{item.size} square ft</span>
               </div>
-              {item.fields.capacity === 1 && (
+              {item.capacity === 1 && (
                 <div>
                   <span>
                     <MdOutlineBedroomChild />{" "}
                   </span>{" "}
-                  <span> Has {item.fields.capacity} bedroom</span>
+                  <span> Has {item.capacity} bedroom</span>
                 </div>
               )}
-              {item.fields.capacity > 1 && (
+              {item.capacity > 1 && (
                 <div>
                   <span>
                     <MdOutlineBedroomParent />{" "}
                   </span>{" "}
-                  <span> Has {item.fields.capacity} bedrooms</span>
+                  <span> Has {item.capacity} bedrooms</span>
                 </div>
               )}
-              {item.fields.breakfast && (
-                <div>
-                  <span>
-                    <TiTick /> <MdOutlineFreeBreakfast />
-                  </span>{" "}
-                  <span> Free Breakfast is Provided</span>
-                </div>
-              )}
-              {!item.fields.breakfast && (
-                <div>
-                  <span>
-                    {" "}
-                    <MdOutlineCancel /> <MdOutlineFreeBreakfast />{" "}
-                  </span>{" "}
-                  <span> No breakfast is provided</span>
-                </div>
-              )}
-              {item.fields.pets && (
+              {item.pets && (
                 <div>
                   <span>
                     {" "}
@@ -156,7 +129,7 @@ const SingleRoom = () => {
                   <span> Pets are allowed</span>
                 </div>
               )}
-              {!item.fields.pets && (
+              {!item.pets && (
                 <div>
                   <span>
                     {" "}
@@ -170,7 +143,7 @@ const SingleRoom = () => {
           <div className="extras">
             <h2>EXTRAS</h2>
             <ul>
-              {item.fields.extras.map((extra) => (
+              {item.extras.map((extra) => (
                 <li className="mama">
                   {" "}
                   <FcCheckmark /> {extra}
@@ -194,27 +167,34 @@ const SingleRoom = () => {
         </h2>
       </div>
       <div className="actualinputs">
-        <input
-          type="text"
-          placeholder="Comment...."
-          value={comment}
-          onChange={(e) => {
-            setComment(e.target.value);
-          }}
-        />
-        <input
-          type="text"
-          placeholder="User...."
-          value={user}
-          onChange={(e) => {
-            setUser(e.target.value);
-          }}
-        />
+        <div>
+          <span>Comment:</span>
+          <input
+            type="text"
+            placeholder="Comment...."
+            value={comment}
+            onChange={(e) => {
+              setComment(e.target.value);
+            }}
+          />
+        </div>
+        <div>
+          <span>User:</span>
+          <input
+            type="text"
+            placeholder="User...."
+            value={user}
+            onChange={(e) => {
+              setUser(e.target.value);
+            }}
+          />
+        </div>
       </div>
-
-      <button type="button" className="postComment" onClick={postComment}>
-        POST COMMENT
-      </button>
+      <div className="post-comment-div">
+        <button type="button" className="postComment" onClick={postComment}>
+          POST COMMENT
+        </button>
+      </div>
     </div>
   );
 
@@ -236,17 +216,59 @@ const SingleRoom = () => {
         </div>
       </div>
     ));
-  
+  const saveHouse = items.map((item) => {
+    if (item.item_id === params.id && savedClass === "save"){
+      return (
+        <div key={item.item_id} className="save-house-btn">
+          <button
+            type="button"
+            onClick={() => {
+              addCart(item);
+              setSavedClass("saved");
+            }}
+          >
+            {" "}
+            <span>SAVE HOUSE</span>{" "}
+            <span className="save-icon">
+              {" "}
+              <MdSaveAlt />{" "}
+            </span>
+          </button>
+        </div>
+      );
+
+    }
+   else if (item.item_id===params.id){
+     return(
+      
+      <div key={item.item_id} className="save-house-btn">
+          <button
+            type="button"
+           
+          >
+            {" "}
+            <span>SAVED THIS HOUSE</span>{" "}
+            <span className="save-icon">
+              {" "}
+              <TiTick />{" "}
+            </span>
+          </button>
+        </div>
+
+     )
+     
+   }
+     
+  });
 
   return (
     <div>
       {detailsBanner}
       {detailsContainer}
+      {saveHouse}
       {comments}
-      <div className="comment-header">COMMENTS</div>
-      <div className="all-comments-div">
-        {lala}
-        </div>
+      <div className="comment-header">REVIEWS</div>
+      <div className="all-comments-div">{lala}</div>
     </div>
   );
 };
