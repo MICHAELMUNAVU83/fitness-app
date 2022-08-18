@@ -1,52 +1,583 @@
-.App {
+@import url('https://fonts.googleapis.com/css2?family=Allura&family=Amaranth&family=Courgette&family=Crete+Round&family=Inter:wght@200;300&family=Istok+Web:wght@700&family=Josefin+Sans:wght@100&family=Kanit:ital,wght@1,300;1,400&family=Kdam+Thmor+Pro&family=Lato:wght@300&family=Lobster+Two:ital@1&family=Mouse+Memoirs&family=Nothing+You+Could+Do&family=Noto+Sans:wght@700&family=Roboto+Mono:ital,wght@1,500&display=swap');
+*{  margin: 0;
+  padding: 0;
+}
+.none{
+ margin-right: 2%;
+ height: 100px;
+ 
+
+}
+.first-back{
+  background-image: url("./images/details-4.jpeg");
+  background-repeat: no-repeat;
+  height: 31rem;
+  background-attachment: fixed;
+}
+.first-back-text{
+ display: flex;
+ flex-direction: column;
+ justify-content: center;
+ align-items: center;
+ height: 500px;
+ color: white;
+ font-size: 3rem;
+ 
+}
+.first-back-text .buddy{
+  font-family: 'Allura', cursive;
+
+}
+
+.logo{
+  height: 40px;
+  width: 140px;
+  margin-top: 10px;
+  border-radius: 20px;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -ms-border-radius: 20px;
+  -o-border-radius: 20px;
+}
+.navlink{
+  text-decoration: none;
+  margin-left: 20px;
+  font-size: 2rem;
+  color: #10294C;
+  font-weight: bolder;
+  font-family: 'Amaranth', sans-serif;
   text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-a{
-  margin-right: 20px;
-}
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+}
+.servicesh4{
+  text-align: center;
+  font-family: 'Noto Sans', sans-serif;
+  font-size: 2rem;
+  color: #10294C;
+}
+.service-line{
+  border: 2px solid #10294C ;
+  width: 30%;
+  margin-left: 35%;
+  margin-bottom: 1%;
 }
 
-.App-link {
-  color: #61dafb;
-}
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
-form{
-  display: flex;
-  flex-direction: column;
-  justify-content: space-evenly;
-  width: 50%;
-  margin-bottom: 20p;
-}
 .four-services-div{
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
+  background-color: #10294C;
+  height: 150px;
+ padding-top: 5%;
+}
+.four-services-div .each-service{
+  align-items: center;
+  text-align: center;
+}
+.four-services-div .each-service i{
+  color: white;
+ font-size: 50px;
+}
+.four-services-div .each-service p{
+  color: white;
+  font-family: 'Noto Sans', sans-serif;
+  width: 90%;
+}
+.featured-text{
+  display: flex;
+  justify-content: center;
+  font-family: 'Noto Sans', sans-serif;
+  font-size: 1.5rem;
+  color: #10294C;
+
+}
+.featured-line{
+  border: 2px solid #10294C ;
+  width: 30%;
+  margin-left: 35%;
+  margin-bottom: 1%;
+
+}
+.featured-rooms{
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+  flex-wrap: wrap;
+  color: #10294C;
+
+}
+.featured-rooms .each-featured{
+ background-color: #10294C;
+  margin: 1%;
+ 
+}
+
+.featured-rooms .each-featured img{
+ 
+  height: 20rem;
+ 
+}
+.featured-rooms .each-featured a{
+  text-decoration: none;
+}
+.featured-rooms .each-featured .about-spans{
+  
+  background-color:#10294C;
+  text-decoration: none;
+  color: white;
+  font-size: 25px;
+  font-family: 'Lobster Two', cursive;
+}
+.featured-rooms .each-featured .about-spans :hover{
+  text-decoration: none;
+  color: white;
+}
+.featured-rooms .each-featured .about-spans .label-for{
+  font-family: 'Kdam Thmor Pro', sans-serif;
+  text-decoration: none;
+}
+
+
+.description-info{
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  margin-top: 2%;
+  font-family: 'Istok Web', sans-serif;
+
+}
+.description{
+  width: 35%;
+  margin-right:30% ;
+}
+.info{
+  margin-right: 10%;
+
+}
+.info > div{
+  margin-bottom: 10px;
+  
+}
+.extras h2{
+  margin-left:2%;
+}
+.extras ul{
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction:row ;
+}
+.extras ul > li{
+  width: 30%;
+  margin-left: 2%;
+  margin-bottom: 0.5%;
+
+}
+.details-banner-img{
+  height: 31rem;
+  width: 100%;
+  position: relative;
+  background-attachment: fixed;
+}
+.details-banner .backdetails{
+  position: absolute;
+  top: 8%;
+  font-size: 5rem;
+}
+
+.details-banner-inner{
+  position: absolute;
+  top: 30%;
+  left: 15%;
+  width: 70%;
+  font-weight: bolder;
+  text-align: center;
+  font-size: 70px;
+  opacity: 70%;
+  color: #10294C;
+  /* font-family: 'Lato', sans-serif; */
+  background-color: white;
+}
+
+
+.extra-images-div{
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.extra-image{
+  width: 23%;
+  height: 20rem;
+  margin-right: 1%;
+  margin-left:1% ;
+}
+.allrooms{
+  display: flex;
+  flex-wrap: wrap;
+}
+.eachroom{
+  margin-right: 2%;
+  background-color: #10294C;
+  margin-bottom: 1%;
+}
+.eachroom .room-img{
+  height: 14rem;
+ 
+ 
+}
+.eachroom .room-spans{
+ 
+  color: white;
+  font-family: 'Lobster Two', cursive;
+  font-size: 20px;
+  
+}
+.eachroom .room-spans .label-for{
+  font-family: 'Kdam Thmor Pro', sans-serif;
+
+}
+.inputCommentsdiv{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  text-align: center;
+
+}
+.inputCommentsdiv .addreview{
+  text-align: center;
+  text-decoration: underline;
+  margin-bottom: 1%;
+
+}
+.inputCommentsdiv .actualinputs{
+  display: flex;
+  justify-content: center;
+}
+.inputCommentsdiv .actualinputs >div{
+  width: 50%;
+}
+.inputCommentsdiv .actualinputs >div >span{
+  font-size: 20px;
+  font-family: 'Istok Web', sans-serif;
+}
+.inputCommentsdiv .actualinputs >div >input{
+  outline: none;
+  width: 70%;
+  height: 2rem;
+  margin-bottom: 1%;
+
+}
+.inputCommentsdiv .post-comment-div{
+  display: flex;
+  justify-content: center;
+}
+.inputCommentsdiv .postComment{
+  background-color: #10294C;
+  border: none;
+  font-weight: bolder;
+  padding: 10px;
+  border-radius: 20px;
+  color: white;
+  display: flex;
+  justify-content: center;
+  width: 30%;
+  font-size: 20px;
+  
+}
+.all-comments-div{
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 1%;
+  margin-left: 6%;
+
+}
+.each-comment{
+  width: 25%;
+  color: white;
+  border-bottom-left-radius: 20px;
+  border-top-right-radius:20px ;
+  background-color: #10294C;
+  margin-right: 1%;
+  margin-left: 1%;
+  font-size: 20px;
+  padding: 10px;
+  margin-bottom: 1%;
+ 
+
+}
+.each-comment-user{
+  font-family: 'Kdam Thmor Pro', sans-serif;
+  
+}
+.each-comment-comment{
+  font-family: 'Courgette', cursive;
+}
+.filter-rooms-div{
+  margin-top: 1%;
+  margin-bottom: 1%;
+  display: flex;
+  justify-content: center;
+
+}
+.filter-rooms-div>div{
+
+ margin-right: 2%;
+}
+.filter-rooms-div>div>label{
+  font-size: 20px;
+  font-family: 'Istok Web', sans-serif;
+ 
+}
+.filter-rooms-div>div >select{
+  height: 2.5rem;
+  font-family: 'Crete Round', serif;
+}
+
+.footer-div{
+  margin-top: 1%;
+  text-align: center;
+  background-image: url("./images/details-1.jpeg");
+  background-attachment: fixed;
+  color:black;
+}
+footer{
+  background-color: white;
+  color: #10294C;
+  width: 40%;
+  margin-left: 30%;
+  opacity: 90%;
+  border-bottom-left-radius: 20px;
+  border-top-right-radius: 20px;
+}
+
+footer .travelbuddy{
+  color: #10294C;
+  
+}
+footer .travelbuddy .travel{
+  font-weight: bolder;
+  font-size: 40px;
+}
+footer .travelbuddy .buddy{
+  font-family: 'Allura', cursive;
+  margin-left: 1%;
+  font-size: 30px;
+}
+.social-icons > a{
+  color: #10294C;
+  font-size: 30px;
+  text-decoration: none;
+}
+
+.comment-header{
+  text-align: center;
+  margin-top: 1%;
+  margin-bottom: 1%;
+  font-size: 30px;
+  text-decoration: underline;
+  font-family: 'Kdam Thmor Pro', sans-serif;
+
+} 
+.save-house-btn button{
+ background-color: #10294C;
+ border: none;
+ font-weight: bolder;
+ padding: 10px;
+ border-radius: 0px;
+ color: white;
+ border-radius:0 ;
+ font-size: 20px;
+ -webkit-border-radius: 0px;
+ -moz-border-radius: 0px;
+ -ms-border-radius: 0px;
+ -o-border-radius: 0px;
+}
+.save-house-btn{
+  align-items: center;
+  display: flex;
+  margin-bottom: 1%;
+  margin-top: 1%;
+  justify-content: center;
+}
+.save-house-btn .save-icon{
+ font-size: 20px;
+}
+.no-houses-div{
+  height: 500px;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
+.no-houses-div h3{
+ padding: 100px;
+ font-size: 70px;
+ background-color: #10294C;
+ color: white;
+ opacity: 80%;
+}
+.saved-rooms-div{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+.eachroom-saved{
+ background-color: #10294C;
+ margin: 1%;
+}
+.eachroom-saved img{
+  height: 14rem;
+}
+.eachroom-saved .room-spans{
+ 
+  color: white;
+  font-family: 'Lobster Two', cursive;
+  font-size: 20px;
+  
+}
+.eachroom-saved .room-spans .label-for{
+  font-family: 'Kdam Thmor Pro', sans-serif;
+
+}
+@media only screen and (max-width: 400px) {
+  body{
+    padding: 0;
+    margin: 0;
+  }
+  .first-back{
+    height: 20rem;
+    
+  }
+  .first-back-text{
+    font-size: 2rem;
+    height: 300px;
+   
+  }
+  .logo{
+    height: 20px;
+  width: 60px;
+  }
+  .navlink{
+    font-size: 1.2rem;
+    margin-left: 10px;
+  }
+  .four-services-div{
+    flex-direction: column;
+    height: 100%;
+  }
+  .four-services-div .each-service{
+    margin-bottom: 0.5%;
+  }
+  .four-services-div .each-service p{
+    width: 100%;
+  }
+  
+  
+  .featured-rooms .each-featured img{
+   width: 100%;
+  }
+  .description-info{
+    gap: 0.5rem;
+    font-size: 10px;
+  }
+  .description{
+    width: 50%;
+    margin-right: 10%;
+  }
+  .info{
+    margin-right: 0;
+   
+  }
+  .extras ul > li{
+    font-size: 10px;
+    width: 30%;
+    margin-bottom: 1%;
+  }
+  .details-banner-img{
+    width: 100%;
+    height: 20rem;
+  }
+  .details-banner .backdetails{
+    font-size: 1rem;
+    top: 2%;
+  }
+  .details-banner-inner{
+    font-size: 2rem;
+    top: 20%;
+
+  }
+  .extra-image{
+    width: 46%;
+    height: 70%;
+    margin-right: 1.5%;
+    margin-left: 1.5%;
+    margin-bottom: 1%;
+  }
+ 
+  .eachroom .room-img{
+    width: 100%;
+  }
+  .filter-rooms-div{
+    display: flex;
+    flex-direction: column;
+  }
+  .filter-rooms-div>div{
+    margin-bottom: 1%;
+    width: 100%;
+   }
+   .filter-rooms-div>div>label{
+    font-size: 10px;
+   
+    
+  }
+  .filter-rooms-div>div >select{
+    width: 60%;
+  }
+  .no-houses-div{
+    height: 300px;
+  }
+  .no-houses-div h3{
+    font-size: 20px;
+    padding: 75px;
+  }
+  .eachroom-saved img{
+    width: 100%;
+  }
+  .save-house-btn button{
+    padding:5px ;
+  }
+  .inputCommentsdiv .actualinputs{
+    flex-direction: column;
+  }
+  .inputCommentsdiv .actualinputs >div{
+    width: 100%;
+    margin-bottom: 0.5%;
+    margin-top: 1%;
+  }
+  .inputCommentsdiv .postComment{
+    width: 50%;
+    padding: 5px;
+  }
+  .all-comments-div{
+    margin-left: 1%;
+    margin-right: 1%;
+  }
+  .each-comment{
+    width: 100%;
+    font-size: 20px;
+  }
+  footer{
+    width: 80%;
+    margin-left: 10%;
+  }
+  
+
+
+
+
+
+
+
+  
 }

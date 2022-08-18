@@ -15,746 +15,583 @@ import img10 from "./images/room-10.jpeg";
 import img11 from "./images/room-11.jpeg";
 import img12 from "./images/room-12.jpeg";
 
-export default [
+const items = [
   {
-    sys: {
-      id: "1"
-    },
-    fields: {
-      name: "single economy",
-      slug: "single-economy",
-      type: "single",
-      price: 100,
-      size: 200,
-      capacity: 1,
-      pets: false,
-      breakfast: false,
-      featured: false,
-      description:
-        "Street art edison bulb gluten-free, tofu try-hard lumbersexual brooklyn tattooed pickled chambray. Actually humblebrag next level, deep v art party wolf tofu direct trade readymade sustainable hell of banjo. Organic authentic subway tile cliche palo santo, street art XOXO dreamcatcher retro sriracha portland air plant kitsch stumptown. Austin small batch squid gastropub. Pabst pug tumblr gochujang offal retro cloud bread bushwick semiotics before they sold out sartorial literally mlkshk. Vaporware hashtag vice, sartorial before they sold out pok pok health goth trust fund cray.",
-      extras: [
-        "Plush pillows and breathable bed linens",
-        "Soft, oversized bath towels",
-        "Full-sized, pH-balanced toiletries",
-        "Complimentary refreshments",
-        "Adequate safety/security",
-        "Internet",
-        "Comfortable beds"
-      ],
-      images: [
-        {
-          fields: {
-            file: {
-              url: img1
-            }
-          }
-        },
-        {
-          fields: {
-            file: {
-              url: room2
-            }
-          }
-        },
-        {
-          fields: {
-            file: {
-              url: room3
-            }
-          }
-        },
-        {
-          fields: {
-            file: {
-              url: room4
-            }
-          }
-        }
-      ]
-    }
+    item_id: "1",
+    saved: false,
+    location: "Lavington",
+    name: "Lavington single economy",
+    type: "single",
+    price: 15000,
+    size: 2500,
+    capacity: 1,
+    pets: false,
+    featured: false,
+    description:
+      "This 1-bedroom apartment in Lavington has a separate bathroom and a separate bedroom with the  kitchen  separate from the living room, ",
+    extras: [
+      "Plush pillows and breathable bed linens",
+      "Soft, oversized bath towels",
+      "Full-sized, pH-balanced toiletries",
+      "Complimentary refreshments",
+      "Adequate safety/security",
+      "Very Fast Internet Connectivity",
+      "Comfortable beds",
+    ],
+    images: [img11, room3, room4, img3],
   },
   {
-    sys: {
-      id: "2"
-    },
-    fields: {
-      name: "single basic",
-      slug: "single-basic",
-      type: "single",
-      price: 150,
-      size: 250,
-      capacity: 1,
-      pets: false,
-      breakfast: false,
-      featured: false,
-      description:
-        "Street art edison bulb gluten-free, tofu try-hard lumbersexual brooklyn tattooed pickled chambray. Actually humblebrag next level, deep v art party wolf tofu direct trade readymade sustainable hell of banjo. Organic authentic subway tile cliche palo santo, street art XOXO dreamcatcher retro sriracha portland air plant kitsch stumptown. Austin small batch squid gastropub. Pabst pug tumblr gochujang offal retro cloud bread bushwick semiotics before they sold out sartorial literally mlkshk. Vaporware hashtag vice, sartorial before they sold out pok pok health goth trust fund cray.",
-      extras: [
-        "Plush pillows and breathable bed linens",
-        "Soft, oversized bath towels",
-        "Full-sized, pH-balanced toiletries",
-        "Complimentary refreshments",
-        "Adequate safety/security",
-        "Internet",
-        "Comfortable beds"
-      ],
-      images: [
-        {
-          fields: {
-            file: {
-              url: img2
-            }
-          }
-        },
-        {
-          fields: {
-            file: {
-              url: room2
-            }
-          }
-        },
-        {
-          fields: {
-            file: {
-              url: room3
-            }
-          }
-        },
-        {
-          fields: {
-            file: {
-              url: room4
-            }
-          }
-        }
-      ]
-    }
+    item_id: "2",
+    saved: false,
+    location: "Kileleshwa",
+    name: "Kileleshwa single economy",
+    type: "single",
+    price: 15000,
+    size: 2500,
+    capacity: 1,
+    pets: false,
+    featured: false,
+    description:
+      "This 1-bedroom apartment in Kileleshwa has a separate bathroom and a separate bedroom with the  kitchen  separate from the living room, ",
+    extras: [
+      "Plush pillows and breathable bed linens",
+      "Soft, oversized bath towels",
+      "Full-sized, pH-balanced toiletries",
+      "Complimentary refreshments",
+      "Adequate safety/security",
+      "Very Fast Internet Connectivity",
+      "Comfortable beds",
+    ],
+    images: [img1, img2, room3, room4],
   },
   {
-    sys: {
-      id: "3"
-    },
-    fields: {
-      name: "single standard",
-      slug: "single-standard",
-      type: "single",
-      price: 250,
-      size: 300,
-      capacity: 1,
-      pets: true,
-      breakfast: false,
-      featured: true,
-      description:
-        "Street art edison bulb gluten-free, tofu try-hard lumbersexual brooklyn tattooed pickled chambray. Actually humblebrag next level, deep v art party wolf tofu direct trade readymade sustainable hell of banjo. Organic authentic subway tile cliche palo santo, street art XOXO dreamcatcher retro sriracha portland air plant kitsch stumptown. Austin small batch squid gastropub. Pabst pug tumblr gochujang offal retro cloud bread bushwick semiotics before they sold out sartorial literally mlkshk. Vaporware hashtag vice, sartorial before they sold out pok pok health goth trust fund cray.",
-      extras: [
-        "Plush pillows and breathable bed linens",
-        "Soft, oversized bath towels",
-        "Full-sized, pH-balanced toiletries",
-        "Complimentary refreshments",
-        "Adequate safety/security",
-        "Internet",
-        "Comfortable beds"
-      ],
-      images: [
-        {
-          fields: {
-            file: {
-              url: img3
-            }
-          }
-        },
-        {
-          fields: {
-            file: {
-              url: room2
-            }
-          }
-        },
-        {
-          fields: {
-            file: {
-              url: room3
-            }
-          }
-        },
-        {
-          fields: {
-            file: {
-              url: room4
-            }
-          }
-        }
-      ]
-    }
+    item_id: "3",
+    saved: false,
+    location: "Kilimani",
+    name: "Kilimani single economy",
+    type: "single",
+    price: 15000,
+    size: 2500,
+    capacity: 1,
+    pets: false,
+    featured: false,
+    description:
+      "This 1-bedroom apartment in Kilimani has a separate bathroom and a separate bedroom with the  kitchen  separate from the living room, ",
+    extras: [
+      "Plush pillows and breathable bed linens",
+      "Soft, oversized bath towels",
+      "Full-sized, pH-balanced toiletries",
+      "Complimentary refreshments",
+      "Adequate safety/security",
+      "Very Fast Internet Connectivity",
+      "Comfortable beds",
+    ],
+    images: [img1, room2, room3, room4],
   },
   {
-    sys: {
-      id: "4"
-    },
-    fields: {
-      name: "single deluxe",
-      slug: "single-deluxe",
-      type: "single",
-      price: 300,
-      size: 400,
-      capacity: 1,
-      pets: true,
-      breakfast: true,
-      featured: false,
-      description:
-        "Street art edison bulb gluten-free, tofu try-hard lumbersexual brooklyn tattooed pickled chambray. Actually humblebrag next level, deep v art party wolf tofu direct trade readymade sustainable hell of banjo. Organic authentic subway tile cliche palo santo, street art XOXO dreamcatcher retro sriracha portland air plant kitsch stumptown. Austin small batch squid gastropub. Pabst pug tumblr gochujang offal retro cloud bread bushwick semiotics before they sold out sartorial literally mlkshk. Vaporware hashtag vice, sartorial before they sold out pok pok health goth trust fund cray.",
-      extras: [
-        "Plush pillows and breathable bed linens",
-        "Soft, oversized bath towels",
-        "Full-sized, pH-balanced toiletries",
-        "Complimentary refreshments",
-        "Adequate safety/security",
-        "Internet",
-        "Comfortable beds"
-      ],
-      images: [
-        {
-          fields: {
-            file: {
-              url: img4
-            }
-          }
-        },
-        {
-          fields: {
-            file: {
-              url: room2
-            }
-          }
-        },
-        {
-          fields: {
-            file: {
-              url: room3
-            }
-          }
-        },
-        {
-          fields: {
-            file: {
-              url: room4
-            }
-          }
-        }
-      ]
-    }
+    item_id: "4",
+    saved: false,
+    location: "Lavington",
+    name: "Lavington single deluxe",
+    type: "single",
+    price: 20000,
+    size: 3500,
+    capacity: 1,
+    pets: false,
+    featured: false,
+    description:
+      "This 1-bedroom apartment in Lavington has a separate bathroom and a separate bedroom with the  kitchen  separate from the living room, ",
+    extras: [
+      "Plush pillows and breathable bed linens",
+      "Soft, oversized bath towels",
+      "Full-sized, pH-balanced toiletries",
+      "Complimentary refreshments",
+      "Adequate safety/security",
+      "Very Fast Internet Connectivity",
+      "Comfortable beds",
+    ],
+    images: [img1, img4, img5, room4],
   },
   {
-    sys: {
-      id: "5"
-    },
-    fields: {
-      name: "double economy",
-      slug: "double-economy",
-      type: "double",
-      price: 200,
-      size: 300,
-      capacity: 2,
-      pets: false,
-      breakfast: false,
-      featured: false,
-      description:
-        "Street art edison bulb gluten-free, tofu try-hard lumbersexual brooklyn tattooed pickled chambray. Actually humblebrag next level, deep v art party wolf tofu direct trade readymade sustainable hell of banjo. Organic authentic subway tile cliche palo santo, street art XOXO dreamcatcher retro sriracha portland air plant kitsch stumptown. Austin small batch squid gastropub. Pabst pug tumblr gochujang offal retro cloud bread bushwick semiotics before they sold out sartorial literally mlkshk. Vaporware hashtag vice, sartorial before they sold out pok pok health goth trust fund cray.",
-      extras: [
-        "Plush pillows and breathable bed linens",
-        "Soft, oversized bath towels",
-        "Full-sized, pH-balanced toiletries",
-        "Complimentary refreshments",
-        "Adequate safety/security",
-        "Internet",
-        "Comfortable beds"
-      ],
-      images: [
-        {
-          fields: {
-            file: {
-              url: img5
-            }
-          }
-        },
-        {
-          fields: {
-            file: {
-              url: room2
-            }
-          }
-        },
-        {
-          fields: {
-            file: {
-              url: room3
-            }
-          }
-        },
-        {
-          fields: {
-            file: {
-              url: room4
-            }
-          }
-        }
-      ]
-    }
+    item_id: "5",
+    saved: false,
+    location: "Kileleshwa",
+    name: "Kileleshwa single deluxe",
+    type: "single",
+    price: 20000,
+    size: 3500,
+    capacity: 1,
+    pets: false,
+    featured: false,
+    description:
+      "This 1-bedroom apartment in Kileleshwa has a separate bathroom and a separate bedroom with the  kitchen  separate from the living room, ",
+    extras: [
+      "Plush pillows and breathable bed linens",
+      "Soft, oversized bath towels",
+      "Full-sized, pH-balanced toiletries",
+      "Complimentary refreshments",
+      "Adequate safety/security",
+      "Very Fast Internet Connectivity",
+      "Comfortable beds",
+    ],
+    images: [img1, img4, img5, room4],
   },
   {
-    sys: {
-      id: "6"
-    },
-    fields: {
-      name: "double basic",
-      slug: "double-basic",
-      type: "double",
-      price: 250,
-      size: 350,
-      capacity: 2,
-      pets: false,
-      breakfast: false,
-      featured: false,
-      description:
-        "Street art edison bulb gluten-free, tofu try-hard lumbersexual brooklyn tattooed pickled chambray. Actually humblebrag next level, deep v art party wolf tofu direct trade readymade sustainable hell of banjo. Organic authentic subway tile cliche palo santo, street art XOXO dreamcatcher retro sriracha portland air plant kitsch stumptown. Austin small batch squid gastropub. Pabst pug tumblr gochujang offal retro cloud bread bushwick semiotics before they sold out sartorial literally mlkshk. Vaporware hashtag vice, sartorial before they sold out pok pok health goth trust fund cray.",
-      extras: [
-        "Plush pillows and breathable bed linens",
-        "Soft, oversized bath towels",
-        "Full-sized, pH-balanced toiletries",
-        "Complimentary refreshments",
-        "Adequate safety/security",
-        "Internet",
-        "Comfortable beds"
-      ],
-      images: [
-        {
-          fields: {
-            file: {
-              url: img6
-            }
-          }
-        },
-        {
-          fields: {
-            file: {
-              url: room2
-            }
-          }
-        },
-        {
-          fields: {
-            file: {
-              url: room3
-            }
-          }
-        },
-        {
-          fields: {
-            file: {
-              url: room4
-            }
-          }
-        }
-      ]
-    }
+    item_id: "6",
+    saved: false,
+    location: "Kilimani",
+    name: "Kilimani single deluxe",
+    type: "single",
+    price: 20000,
+    size: 3500,
+    capacity: 1,
+    pets: false,
+    featured: true,
+    description:
+      "This 1-bedroom apartment in Kilimani has a separate bathroom and a separate bedroom with the  kitchen  separate from the living room, ",
+    extras: [
+      "Plush pillows and breathable bed linens",
+      "Soft, oversized bath towels",
+      "Full-sized, pH-balanced toiletries",
+      "Complimentary refreshments",
+      "Adequate safety/security",
+      "Very Fast Internet Connectivity",
+      "Comfortable beds",
+    ],
+    images: [img5, img6, img5, room4],
   },
   {
-    sys: {
-      id: "7"
-    },
-    fields: {
-      name: "double standard",
-      slug: "double-standard",
-      type: "double",
-      price: 300,
-      size: 400,
-      capacity: 2,
-      pets: true,
-      breakfast: false,
-      featured: false,
-      description:
-        "Street art edison bulb gluten-free, tofu try-hard lumbersexual brooklyn tattooed pickled chambray. Actually humblebrag next level, deep v art party wolf tofu direct trade readymade sustainable hell of banjo. Organic authentic subway tile cliche palo santo, street art XOXO dreamcatcher retro sriracha portland air plant kitsch stumptown. Austin small batch squid gastropub. Pabst pug tumblr gochujang offal retro cloud bread bushwick semiotics before they sold out sartorial literally mlkshk. Vaporware hashtag vice, sartorial before they sold out pok pok health goth trust fund cray.",
-      extras: [
-        "Plush pillows and breathable bed linens",
-        "Soft, oversized bath towels",
-        "Full-sized, pH-balanced toiletries",
-        "Complimentary refreshments",
-        "Adequate safety/security",
-        "Internet",
-        "Comfortable beds"
-      ],
-      images: [
-        {
-          fields: {
-            file: {
-              url: img7
-            }
-          }
-        },
-        {
-          fields: {
-            file: {
-              url: room2
-            }
-          }
-        },
-        {
-          fields: {
-            file: {
-              url: room3
-            }
-          }
-        },
-        {
-          fields: {
-            file: {
-              url: room4
-            }
-          }
-        }
-      ]
-    }
+    item_id: "7",
+    saved: false,
+    location: "Lavington",
+    name: "Lavington double economy",
+    type: "double",
+    price: 25000,
+    size: 4000,
+    capacity: 2,
+    pets: false,
+    featured: false,
+    description:
+      "This 2-bedroom apartment in Lavington has a separate bathroom and a separate bedroom with the  kitchen  separate from the living room, ",
+    extras: [
+      "Plush pillows and breathable bed linens",
+      "Soft, oversized bath towels",
+      "Full-sized, pH-balanced toiletries",
+      "Complimentary refreshments",
+      "Adequate safety/security",
+      "Very Fast Internet Connectivity",
+      "Comfortable beds",
+    ],
+    images: [img1, img4, img5, room4],
   },
   {
-    sys: {
-      id: "8"
-    },
-    fields: {
-      name: "double deluxe",
-      slug: "double-deluxe",
-      type: "double",
-      price: 400,
-      size: 500,
-      capacity: 2,
-      pets: true,
-      breakfast: true,
-      featured: true,
-      description:
-        "Street art edison bulb gluten-free, tofu try-hard lumbersexual brooklyn tattooed pickled chambray. Actually humblebrag next level, deep v art party wolf tofu direct trade readymade sustainable hell of banjo. Organic authentic subway tile cliche palo santo, street art XOXO dreamcatcher retro sriracha portland air plant kitsch stumptown. Austin small batch squid gastropub. Pabst pug tumblr gochujang offal retro cloud bread bushwick semiotics before they sold out sartorial literally mlkshk. Vaporware hashtag vice, sartorial before they sold out pok pok health goth trust fund cray.",
-      extras: [
-        "Plush pillows and breathable bed linens",
-        "Soft, oversized bath towels",
-        "Full-sized, pH-balanced toiletries",
-        "Complimentary refreshments",
-        "Adequate safety/security",
-        "Internet",
-        "Comfortable beds"
-      ],
-      images: [
-        {
-          fields: {
-            file: {
-              url: img8
-            }
-          }
-        },
-        {
-          fields: {
-            file: {
-              url: room2
-            }
-          }
-        },
-        {
-          fields: {
-            file: {
-              url: room3
-            }
-          }
-        },
-        {
-          fields: {
-            file: {
-              url: room4
-            }
-          }
-        }
-      ]
-    }
+    item_id: "8",
+    saved: false,
+    location: "Kileleshwa",
+    name: "Kileleshwa double economy",
+    type: "double",
+    price: 25000,
+    size: 4000,
+    capacity: 2,
+    pets: false,
+    featured: false,
+    description:
+      "This 2-bedroom apartment in Kileleshwa has a separate bathroom and a separate bedroom with the  kitchen  separate from the living room, ",
+    extras: [
+      "Plush pillows and breathable bed linens",
+      "Soft, oversized bath towels",
+      "Full-sized, pH-balanced toiletries",
+      "Complimentary refreshments",
+      "Adequate safety/security",
+      "Very Fast Internet Connectivity",
+      "Comfortable beds",
+    ],
+    images: [img1, img6, img5, room4],
   },
   {
-    sys: {
-      id: "9"
-    },
-    fields: {
-      name: "family economy",
-      slug: "family-economy",
-      type: "family",
-      price: 300,
-      size: 500,
-      capacity: 3,
-      pets: false,
-      breakfast: false,
-      featured: false,
-      description:
-        "Street art edison bulb gluten-free, tofu try-hard lumbersexual brooklyn tattooed pickled chambray. Actually humblebrag next level, deep v art party wolf tofu direct trade readymade sustainable hell of banjo. Organic authentic subway tile cliche palo santo, street art XOXO dreamcatcher retro sriracha portland air plant kitsch stumptown. Austin small batch squid gastropub. Pabst pug tumblr gochujang offal retro cloud bread bushwick semiotics before they sold out sartorial literally mlkshk. Vaporware hashtag vice, sartorial before they sold out pok pok health goth trust fund cray.",
-      extras: [
-        "Plush pillows and breathable bed linens",
-        "Soft, oversized bath towels",
-        "Full-sized, pH-balanced toiletries",
-        "Complimentary refreshments",
-        "Adequate safety/security",
-        "Internet",
-        "Comfortable beds"
-      ],
-      images: [
-        {
-          fields: {
-            file: {
-              url: img9
-            }
-          }
-        },
-        {
-          fields: {
-            file: {
-              url: room2
-            }
-          }
-        },
-        {
-          fields: {
-            file: {
-              url: room3
-            }
-          }
-        },
-        {
-          fields: {
-            file: {
-              url: room4
-            }
-          }
-        }
-      ]
-    }
+    item_id: "9",
+    saved: false,
+    location: "Kilimani",
+    name: "Kilimani double economy",
+    type: "double",
+    price: 25000,
+    size: 4000,
+    capacity: 2,
+    pets: false,
+    featured: false,
+    description:
+      "This 2-bedroom apartment in Kilimani has a separate bathroom and a separate bedroom with the  kitchen  separate from the living room, ",
+    extras: [
+      "Plush pillows and breathable bed linens",
+      "Soft, oversized bath towels",
+      "Full-sized, pH-balanced toiletries",
+      "Complimentary refreshments",
+      "Adequate safety/security",
+      "Very Fast Internet Connectivity",
+      "Comfortable beds",
+    ],
+    images: [img1, img7, img5, room4],
   },
   {
-    sys: {
-      id: "10"
-    },
-    fields: {
-      name: "family basic",
-      slug: "family-basic",
-      type: "family",
-      price: 350,
-      size: 550,
-      capacity: 4,
-      pets: false,
-      breakfast: false,
-      featured: false,
-      description:
-        "Street art edison bulb gluten-free, tofu try-hard lumbersexual brooklyn tattooed pickled chambray. Actually humblebrag next level, deep v art party wolf tofu direct trade readymade sustainable hell of banjo. Organic authentic subway tile cliche palo santo, street art XOXO dreamcatcher retro sriracha portland air plant kitsch stumptown. Austin small batch squid gastropub. Pabst pug tumblr gochujang offal retro cloud bread bushwick semiotics before they sold out sartorial literally mlkshk. Vaporware hashtag vice, sartorial before they sold out pok pok health goth trust fund cray.",
-      extras: [
-        "Plush pillows and breathable bed linens",
-        "Soft, oversized bath towels",
-        "Full-sized, pH-balanced toiletries",
-        "Complimentary refreshments",
-        "Adequate safety/security",
-        "Internet",
-        "Comfortable beds"
-      ],
-      images: [
-        {
-          fields: {
-            file: {
-              url: img10
-            }
-          }
-        },
-        {
-          fields: {
-            file: {
-              url: room2
-            }
-          }
-        },
-        {
-          fields: {
-            file: {
-              url: room3
-            }
-          }
-        },
-        {
-          fields: {
-            file: {
-              url: room4
-            }
-          }
-        }
-      ]
-    }
+    item_id: "10",
+    saved: false,
+    location: "Lavington",
+    name: "Lavington double deluxe",
+    type: "double",
+    price: 30000,
+    size: 4500,
+    capacity: 2,
+    pets: false,
+    featured: false,
+    description:
+      "This 2-bedroom apartment in Lavington has a separate bathroom and a separate bedroom with the  kitchen  separate from the living room, ",
+    extras: [
+      "Plush pillows and breathable bed linens",
+      "Soft, oversized bath towels",
+      "Full-sized, pH-balanced toiletries",
+      "Complimentary refreshments",
+      "Adequate safety/security",
+      "Very Fast Internet Connectivity",
+      "Comfortable beds",
+    ],
+    images: [img8, img6, img5, room4],
   },
   {
-    sys: {
-      id: "11"
-    },
-    fields: {
-      name: "family standard",
-      slug: "family-standard",
-      type: "family",
-      price: 400,
-      size: 600,
-      capacity: 5,
-      pets: true,
-      breakfast: false,
-      featured: false,
-      description:
-        "Street art edison bulb gluten-free, tofu try-hard lumbersexual brooklyn tattooed pickled chambray. Actually humblebrag next level, deep v art party wolf tofu direct trade readymade sustainable hell of banjo. Organic authentic subway tile cliche palo santo, street art XOXO dreamcatcher retro sriracha portland air plant kitsch stumptown. Austin small batch squid gastropub. Pabst pug tumblr gochujang offal retro cloud bread bushwick semiotics before they sold out sartorial literally mlkshk. Vaporware hashtag vice, sartorial before they sold out pok pok health goth trust fund cray.",
-      extras: [
-        "Plush pillows and breathable bed linens",
-        "Soft, oversized bath towels",
-        "Full-sized, pH-balanced toiletries",
-        "Complimentary refreshments",
-        "Adequate safety/security",
-        "Internet",
-        "Comfortable beds"
-      ],
-      images: [
-        {
-          fields: {
-            file: {
-              url: img11
-            }
-          }
-        },
-        {
-          fields: {
-            file: {
-              url: room2
-            }
-          }
-        },
-        {
-          fields: {
-            file: {
-              url: room3
-            }
-          }
-        },
-        {
-          fields: {
-            file: {
-              url: room4
-            }
-          }
-        }
-      ]
-    }
+    item_id: "11",
+    saved: false,
+    location: "Kileleshwa",
+    name: "Kileleshwa double deluxe",
+    type: "double",
+    price: 30000,
+    size: 4500,
+    capacity: 2,
+    pets: false,
+    featured: false,
+    description:
+      "This 2-bedroom apartment in Kileleshwa has a separate bathroom and a separate bedroom with the  kitchen  separate from the living room, ",
+    extras: [
+      "Plush pillows and breathable bed linens",
+      "Soft, oversized bath towels",
+      "Full-sized, pH-balanced toiletries",
+      "Complimentary refreshments",
+      "Adequate safety/security",
+      "Very Fast Internet Connectivity",
+      "Comfortable beds",
+    ],
+    images: [img8, img6, img5, room4],
   },
   {
-    sys: {
-      id: "12"
-    },
-    fields: {
-      name: "family deluxe",
-      slug: "family-deluxe",
-      type: "family",
-      price: 500,
-      size: 700,
-      capacity: 6,
-      pets: true,
-      breakfast: true,
-      featured: true,
-      description:
-        "Street art edison bulb gluten-free, tofu try-hard lumbersexual brooklyn tattooed pickled chambray. Actually humblebrag next level, deep v art party wolf tofu direct trade readymade sustainable hell of banjo. Organic authentic subway tile cliche palo santo, street art XOXO dreamcatcher retro sriracha portland air plant kitsch stumptown. Austin small batch squid gastropub. Pabst pug tumblr gochujang offal retro cloud bread bushwick semiotics before they sold out sartorial literally mlkshk. Vaporware hashtag vice, sartorial before they sold out pok pok health goth trust fund cray.",
-      extras: [
-        "Plush pillows and breathable bed linens",
-        "Soft, oversized bath towels",
-        "Full-sized, pH-balanced toiletries",
-        "Complimentary refreshments",
-        "Adequate safety/security",
-        "Internet",
-        "Comfortable beds"
-      ],
-      images: [
-        {
-          fields: {
-            file: {
-              url: img12
-            }
-          }
-        },
-        {
-          fields: {
-            file: {
-              url: room2
-            }
-          }
-        },
-        {
-          fields: {
-            file: {
-              url: room3
-            }
-          }
-        },
-        {
-          fields: {
-            file: {
-              url: room4
-            }
-          }
-        }
-      ]
-    }
+    item_id: "12",
+    saved: false,
+    location: "Kilimani",
+    name: "Kilimani double deluxe",
+    type: "double",
+    price: 30000,
+    size: 4500,
+    capacity: 2,
+    pets: false,
+    featured: true,
+    description:
+      "This 2-bedroom apartment in Kilimani has a separate bathroom and a separate bedroom with the  kitchen  separate from the living room, ",
+    extras: [
+      "Plush pillows and breathable bed linens",
+      "Soft, oversized bath towels",
+      "Full-sized, pH-balanced toiletries",
+      "Complimentary refreshments",
+      "Adequate safety/security",
+      "Very Fast Internet Connectivity",
+      "Comfortable beds",
+    ],
+    images: [img9, img6, img1, room2],
   },
   {
-    sys: {
-      id: "13"
-    },
-    fields: {
-      name: "presidential",
-      slug: "presidential-room",
-      type: "presidential",
-      price: 600,
-      size: 1000,
-      capacity: 10,
-      pets: true,
-      breakfast: true,
-      featured: true,
-      description:
-        "Street art edison bulb gluten-free, tofu try-hard lumbersexual brooklyn tattooed pickled chambray. Actually humblebrag next level, deep v art party wolf tofu direct trade readymade sustainable hell of banjo. Organic authentic subway tile cliche palo santo, street art XOXO dreamcatcher retro sriracha portland air plant kitsch stumptown. Austin small batch squid gastropub. Pabst pug tumblr gochujang offal retro cloud bread bushwick semiotics before they sold out sartorial literally mlkshk. Vaporware hashtag vice, sartorial before they sold out pok pok health goth trust fund cray.",
-      extras: [
-        "Plush pillows and breathable bed linens",
-        "Soft, oversized bath towels",
-        "Full-sized, pH-balanced toiletries",
-        "Complimentary refreshments",
-        "Adequate safety/security",
-        "Internet",
-        "Comfortable beds"
-      ],
-      images: [
-        {
-          fields: {
-            file: {
-              url: room1
-            }
-          }
-        },
-        {
-          fields: {
-            file: {
-              url: room2
-            }
-          }
-        },
-        {
-          fields: {
-            file: {
-              url: room3
-            }
-          }
-        },
-        {
-          fields: {
-            file: {
-              url: room4
-            }
-          }
-        }
-      ]
-    }
-  }
+    item_id: "13",
+    saved: false,
+    location: "Lavington",
+    name: "Lavington family economy",
+    type: "family",
+    price: 35000,
+    size: 5000,
+    capacity: 3,
+    pets: false,
+    featured: false,
+    description:
+      "This 3-bedroom apartment in Lavington has a separate bathroom and a separate bedroom with the  kitchen  separate from the living room, ",
+    extras: [
+      "Plush pillows and breathable bed linens",
+      "Soft, oversized bath towels",
+      "Full-sized, pH-balanced toiletries",
+      "Complimentary refreshments",
+      "Adequate safety/security",
+      "Very Fast Internet Connectivity",
+      "Comfortable beds",
+    ],
+    images: [img8, img6, room1, room4],
+  },
+  {
+    item_id: "14",
+    saved: false,
+    location: "Kileleshwa",
+    name: "Kileleshwa family economy",
+    type: "family",
+    price: 35000,
+    size: 5000,
+    capacity: 3,
+    pets: false,
+    featured: false,
+    description:
+      "This 3-bedroom apartment in Kileleshwa has a separate bathroom and a separate bedroom with the  kitchen  separate from the living room, ",
+    extras: [
+      "Plush pillows and breathable bed linens",
+      "Soft, oversized bath towels",
+      "Full-sized, pH-balanced toiletries",
+      "Complimentary refreshments",
+      "Adequate safety/security",
+      "Very Fast Internet Connectivity",
+      "Comfortable beds",
+    ],
+    images: [img8, img9, room1, room4],
+  },
+  {
+    item_id: "15",
+    saved: false,
+    location: "Kilimani",
+    name: "Kilimani family economy",
+    type: "family",
+    price: 35000,
+    size: 5000,
+    capacity: 3,
+    pets: false,
+    featured: false,
+    description:
+      "This 3-bedroom apartment in Kilimani has a separate bathroom and a separate bedroom with the  kitchen  separate from the living room, ",
+    extras: [
+      "Plush pillows and breathable bed linens",
+      "Soft, oversized bath towels",
+      "Full-sized, pH-balanced toiletries",
+      "Complimentary refreshments",
+      "Adequate safety/security",
+      "Very Fast Internet Connectivity",
+      "Comfortable beds",
+    ],
+    images: [img8, img7, room1, room4],
+  },
+  {
+    item_id: "16",
+    saved: false,
+    location: "Lavington",
+    name: "Lavington family deluxe",
+    type: "family",
+    price: 40000,
+    size: 5500,
+    capacity: 3,
+    pets: false,
+    featured: true,
+    description:
+      "This 3-bedroom apartment in Lavington has a separate bathroom and a separate bedroom with the  kitchen  separate from the living room, ",
+    extras: [
+      "Plush pillows and breathable bed linens",
+      "Soft, oversized bath towels",
+      "Full-sized, pH-balanced toiletries",
+      "Complimentary refreshments",
+      "Adequate safety/security",
+      "Very Fast Internet Connectivity",
+      "Comfortable beds",
+    ],
+    images: [img4, img9, room1, room4],
+  },
+  {
+    item_id: "17",
+    saved: false,
+    location: "Kileleshwa",
+    name: "Kileleshwa family deluxe",
+    type: "family",
+    price: 40000,
+    size: 5500,
+    capacity: 3,
+    pets: false,
+    featured: false,
+    description:
+      "This 3-bedroom apartment in Kileleshwa has a separate bathroom and a separate bedroom with the  kitchen  separate from the living room, ",
+    extras: [
+      "Plush pillows and breathable bed linens",
+      "Soft, oversized bath towels",
+      "Full-sized, pH-balanced toiletries",
+      "Complimentary refreshments",
+      "Adequate safety/security",
+      "Very Fast Internet Connectivity",
+      "Comfortable beds",
+    ],
+    images: [img8, img8, room3, room4],
+  },
+  {
+    item_id: "18",
+    saved: false,
+    location: "Kilimani",
+    name: "Kilimani family deluxe",
+    type: "family",
+    price: 40000,
+    size: 5500,
+    capacity: 3,
+    pets: false,
+    featured: false,
+    description:
+      "This 3-bedroom apartment in Kilimani has a separate bathroom and a separate bedroom with the  kitchen  separate from the living room, ",
+    extras: [
+      "Plush pillows and breathable bed linens",
+      "Soft, oversized bath towels",
+      "Full-sized, pH-balanced toiletries",
+      "Complimentary refreshments",
+      "Adequate safety/security",
+      "Very Fast Internet Connectivity",
+      "Comfortable beds",
+    ],
+    images: [img8, img10, img5, room4],
+  },
+  {
+    item_id: "19",
+    saved: false,
+    location: "Lavington",
+    name: "Lavington executive ",
+    type: "executive",
+    price: 45000,
+    size: 6000,
+    capacity: 4,
+    pets: false,
+    featured: false,
+    description:
+      "This 4-bedroom apartment in Lavington has a separate bathroom and a separate bedroom with the  kitchen  separate from the living room, ",
+    extras: [
+      "Plush pillows and breathable bed linens",
+      "Soft, oversized bath towels",
+      "Full-sized, pH-balanced toiletries",
+      "Complimentary refreshments",
+      "Adequate safety/security",
+      "Very Fast Internet Connectivity",
+      "Comfortable beds",
+    ],
+    images: [img8, img12, img5, room4],
+  },
+  {
+    item_id: "20",
+    saved: false,
+    location: "Kileleshwa",
+    name: "Kileleshwa executive ",
+    type: "executive",
+    price: 45000,
+    size: 6000,
+    capacity: 4,
+    pets: false,
+    featured: false,
+    description:
+      "This 4-bedroom apartment in Kileleshwa has a separate bathroom and a separate bedroom with the  kitchen  separate from the living room, ",
+    extras: [
+      "Plush pillows and breathable bed linens",
+      "Soft, oversized bath towels",
+      "Full-sized, pH-balanced toiletries",
+      "Complimentary refreshments",
+      "Adequate safety/security",
+      "Very Fast Internet Connectivity",
+      "Comfortable beds",
+    ],
+    images: [img8, room2, img5, room4],
+  },
+  {
+    item_id: "21",
+    saved: false,
+    location: "Kilimani",
+    name: "Kilimani executive ",
+    type: "executive",
+    price: 45000,
+    size: 6000,
+    capacity: 4,
+    pets: false,
+    featured: false,
+    description:
+      "This 4-bedroom apartment in Kilimani has a separate bathroom and a separate bedroom with the  kitchen  separate from the living room, ",
+    extras: [
+      "Plush pillows and breathable bed linens",
+      "Soft, oversized bath towels",
+      "Full-sized, pH-balanced toiletries",
+      "Complimentary refreshments",
+      "Adequate safety/security",
+      "Very Fast Internet Connectivity",
+      "Comfortable beds",
+    ],
+    images: [img8, img2, img5, room4],
+  },
+  {
+    item_id: "22",
+    saved: false,
+    location: "Lavington",
+    name: "Lavington Premium",
+    type: "premium",
+    price: 50000,
+    size: 6000,
+    capacity: 5,
+    pets: false,
+    featured: false,
+    description:
+      "This 5-bedroom apartment in Lavington has a separate bathroom and a separate bedroom with the  kitchen  separate from the living room, ",
+    extras: [
+      "Plush pillows and breathable bed linens",
+      "Soft, oversized bath towels",
+      "Full-sized, pH-balanced toiletries",
+      "Complimentary refreshments",
+      "Adequate safety/security",
+      "Very Fast Internet Connectivity",
+      "Comfortable beds",
+    ],
+    images: [img8, img2, img5, room4],
+  },
+  {
+    item_id: "23",
+    saved: false,
+    location: "Kileleshwa",
+    name: "Kileleshwa  Premium",
+    type: "premium",
+    price: 50000,
+    size: 6000,
+    capacity: 5,
+    pets: false,
+    featured: true,
+    description:
+      "This 5-bedroom apartment in Kileleshwa has a separate bathroom and a separate bedroom with the  kitchen  separate from the living room, ",
+    extras: [
+      "Plush pillows and breathable bed linens",
+      "Soft, oversized bath towels",
+      "Full-sized, pH-balanced toiletries",
+      "Complimentary refreshments",
+      "Adequate safety/security",
+      "Very Fast Internet Connectivity",
+      "Comfortable beds",
+    ],
+    images: [img8, img2, img5, room4],
+  },
+  {
+    item_id: "24",
+    saved: false,
+    location: "Kilimani",
+    name: "Kilimani Premium",
+    type: "premium",
+    price: 50000,
+    size: 6000,
+    capacity: 5,
+    pets: false,
+    featured: false,
+    description:
+      "This 5-bedroom apartment in Kilimani has a separate bathroom and a separate bedroom with the  kitchen  separate from the living room, ",
+    extras: [
+      "Plush pillows and breathable bed linens",
+      "Soft, oversized bath towels",
+      "Full-sized, pH-balanced toiletries",
+      "Complimentary refreshments",
+      "Adequate safety/security",
+      "Very Fast Internet Connectivity",
+      "Comfortable beds",
+    ],
+    images: [img8, img2, img5, room4],
+  },
+  
 ];
+export default items
