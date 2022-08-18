@@ -15,13 +15,13 @@
   background-attachment: fixed;
 }
 .first-back-text{
-position: absolute;
- margin-left: 35%;
- padding: 10px;
- font-size: 3rem;
- top: 30%;
- opacity: 70%;
+ display: flex;
+ flex-direction: column;
+ justify-content: center;
+ align-items: center;
+ height: 500px;
  color: white;
+ font-size: 3rem;
  
 }
 .first-back-text .buddy{
@@ -43,7 +43,7 @@ position: absolute;
   text-decoration: none;
   margin-left: 20px;
   font-size: 2rem;
-  color: #8c756a;
+  color: #10294C;
   font-weight: bolder;
   font-family: 'Amaranth', sans-serif;
   text-align: center;
@@ -53,9 +53,10 @@ position: absolute;
   text-align: center;
   font-family: 'Noto Sans', sans-serif;
   font-size: 2rem;
+  color: #10294C;
 }
 .service-line{
-  border: 2px solid #8c756a ;
+  border: 2px solid #10294C ;
   width: 30%;
   margin-left: 35%;
   margin-bottom: 1%;
@@ -66,7 +67,7 @@ position: absolute;
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
-  background-color:#8c756a;
+  background-color: #10294C;
   height: 150px;
  padding-top: 5%;
 }
@@ -81,16 +82,18 @@ position: absolute;
 .four-services-div .each-service p{
   color: white;
   font-family: 'Noto Sans', sans-serif;
+  width: 90%;
 }
 .featured-text{
   display: flex;
   justify-content: center;
   font-family: 'Noto Sans', sans-serif;
   font-size: 1.5rem;
+  color: #10294C;
 
 }
 .featured-line{
-  border: 2px solid #8c756a ;
+  border: 2px solid #10294C ;
   width: 30%;
   margin-left: 35%;
   margin-bottom: 1%;
@@ -101,10 +104,11 @@ position: absolute;
   justify-content: center;
   margin-top: 20px;
   flex-wrap: wrap;
+  color: #10294C;
 
 }
 .featured-rooms .each-featured{
- background-color: #8c756a;
+ background-color: #10294C;
   margin: 1%;
  
 }
@@ -119,7 +123,7 @@ position: absolute;
 }
 .featured-rooms .each-featured .about-spans{
   
-  background-color:#8c756a;
+  background-color:#10294C;
   text-decoration: none;
   color: white;
   font-size: 25px;
@@ -134,9 +138,7 @@ position: absolute;
   text-decoration: none;
 }
 
-.detailsimg{
-  width: 200px;
-}
+
 .description-info{
   display: flex;
   justify-content: center;
@@ -168,7 +170,9 @@ position: absolute;
 }
 .extras ul > li{
   width: 30%;
-  margin-left: 2%
+  margin-left: 2%;
+  margin-bottom: 0.5%;
+
 }
 .details-banner-img{
   height: 31rem;
@@ -181,9 +185,7 @@ position: absolute;
   top: 8%;
   font-size: 5rem;
 }
-.details-banner .backdetails a{
-  color: #8c756a;
-}
+
 .details-banner-inner{
   position: absolute;
   top: 30%;
@@ -193,8 +195,9 @@ position: absolute;
   text-align: center;
   font-size: 70px;
   opacity: 70%;
+  color: #10294C;
   /* font-family: 'Lato', sans-serif; */
-  background-color: #c4a99c;
+  background-color: white;
 }
 
 
@@ -215,7 +218,7 @@ position: absolute;
 }
 .eachroom{
   margin-right: 2%;
-  background-color: #8c756a;
+  background-color: #10294C;
   margin-bottom: 1%;
 }
 .eachroom .room-img{
@@ -271,7 +274,7 @@ position: absolute;
   justify-content: center;
 }
 .inputCommentsdiv .postComment{
-  background-color: #8c756a;
+  background-color: #10294C;
   border: none;
   font-weight: bolder;
   padding: 10px;
@@ -281,10 +284,7 @@ position: absolute;
   justify-content: center;
   width: 30%;
   font-size: 20px;
-  -webkit-border-radius: 20px;
-  -moz-border-radius: 20px;
-  -ms-border-radius: 20px;
-  -o-border-radius: 20px;
+  
 }
 .all-comments-div{
   display: flex;
@@ -295,9 +295,10 @@ position: absolute;
 }
 .each-comment{
   width: 25%;
+  color: white;
   border-bottom-left-radius: 20px;
   border-top-right-radius:20px ;
-  background-color: #c5b2a7;
+  background-color: #10294C;
   margin-right: 1%;
   margin-left: 1%;
   font-size: 20px;
@@ -342,16 +343,17 @@ position: absolute;
   color:black;
 }
 footer{
-  background-color: #8c756a;
+  background-color: white;
+  color: #10294C;
   width: 40%;
   margin-left: 30%;
-  opacity: 70%;
+  opacity: 90%;
   border-bottom-left-radius: 20px;
   border-top-right-radius: 20px;
 }
 
 footer .travelbuddy{
-  color: white;
+  color: #10294C;
   
 }
 footer .travelbuddy .travel{
@@ -364,7 +366,7 @@ footer .travelbuddy .buddy{
   font-size: 30px;
 }
 .social-icons > a{
-  color: black;
+  color: #10294C;
   font-size: 30px;
   text-decoration: none;
 }
@@ -379,19 +381,18 @@ footer .travelbuddy .buddy{
 
 } 
 .save-house-btn button{
-  background-color: #8c756a;
-  border: none;
-  font-weight: bolder;
-  padding: 10px;
-  border-radius: 20px;
-  color: white;
-  width: 25%;
-  font-size: 20px;
-  -webkit-border-radius: 20px;
-  -moz-border-radius: 20px;
-  -ms-border-radius: 20px;
-  -o-border-radius: 20px;
-  
+ background-color: #10294C;
+ border: none;
+ font-weight: bolder;
+ padding: 10px;
+ border-radius: 0px;
+ color: white;
+ border-radius:0 ;
+ font-size: 20px;
+ -webkit-border-radius: 0px;
+ -moz-border-radius: 0px;
+ -ms-border-radius: 0px;
+ -o-border-radius: 0px;
 }
 .save-house-btn{
   align-items: center;
@@ -412,7 +413,8 @@ footer .travelbuddy .buddy{
 .no-houses-div h3{
  padding: 100px;
  font-size: 70px;
- background-color: #8c756a;
+ background-color: #10294C;
+ color: white;
  opacity: 80%;
 }
 .saved-rooms-div{
@@ -421,10 +423,8 @@ footer .travelbuddy .buddy{
   flex-wrap: wrap;
 }
 .eachroom-saved{
- background-color: #8c756a;
+ background-color: #10294C;
  margin: 1%;
-
-
 }
 .eachroom-saved img{
   height: 14rem;
@@ -439,4 +439,145 @@ footer .travelbuddy .buddy{
 .eachroom-saved .room-spans .label-for{
   font-family: 'Kdam Thmor Pro', sans-serif;
 
+}
+@media only screen and (max-width: 400px) {
+  body{
+    padding: 0;
+    margin: 0;
+  }
+  .first-back{
+    height: 20rem;
+    
+  }
+  .first-back-text{
+    font-size: 2rem;
+    height: 300px;
+   
+  }
+  .logo{
+    height: 20px;
+  width: 60px;
+  }
+  .navlink{
+    font-size: 1.2rem;
+    margin-left: 10px;
+  }
+  .four-services-div{
+    flex-direction: column;
+    height: 100%;
+  }
+  .four-services-div .each-service{
+    margin-bottom: 0.5%;
+  }
+  .four-services-div .each-service p{
+    width: 100%;
+  }
+  
+  
+  .featured-rooms .each-featured img{
+   width: 100%;
+  }
+  .description-info{
+    gap: 0.5rem;
+    font-size: 10px;
+  }
+  .description{
+    width: 50%;
+    margin-right: 10%;
+  }
+  .info{
+    margin-right: 0;
+   
+  }
+  .extras ul > li{
+    font-size: 10px;
+    width: 30%;
+    margin-bottom: 1%;
+  }
+  .details-banner-img{
+    width: 100%;
+    height: 20rem;
+  }
+  .details-banner .backdetails{
+    font-size: 1rem;
+    top: 2%;
+  }
+  .details-banner-inner{
+    font-size: 2rem;
+    top: 20%;
+
+  }
+  .extra-image{
+    width: 46%;
+    height: 70%;
+    margin-right: 1.5%;
+    margin-left: 1.5%;
+    margin-bottom: 1%;
+  }
+ 
+  .eachroom .room-img{
+    width: 100%;
+  }
+  .filter-rooms-div{
+    display: flex;
+    flex-direction: column;
+  }
+  .filter-rooms-div>div{
+    margin-bottom: 1%;
+    width: 100%;
+   }
+   .filter-rooms-div>div>label{
+    font-size: 10px;
+   
+    
+  }
+  .filter-rooms-div>div >select{
+    width: 60%;
+  }
+  .no-houses-div{
+    height: 300px;
+  }
+  .no-houses-div h3{
+    font-size: 20px;
+    padding: 75px;
+  }
+  .eachroom-saved img{
+    width: 100%;
+  }
+  .save-house-btn button{
+    padding:5px ;
+  }
+  .inputCommentsdiv .actualinputs{
+    flex-direction: column;
+  }
+  .inputCommentsdiv .actualinputs >div{
+    width: 100%;
+    margin-bottom: 0.5%;
+    margin-top: 1%;
+  }
+  .inputCommentsdiv .postComment{
+    width: 50%;
+    padding: 5px;
+  }
+  .all-comments-div{
+    margin-left: 1%;
+    margin-right: 1%;
+  }
+  .each-comment{
+    width: 100%;
+    font-size: 20px;
+  }
+  footer{
+    width: 80%;
+    margin-left: 10%;
+  }
+  
+
+
+
+
+
+
+
+  
 }

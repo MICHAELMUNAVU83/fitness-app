@@ -1,11 +1,11 @@
-import React , {useContext} from 'react'
+import React  from 'react'
 import logo from "../images/logos.png"
 import {Link} from "react-router-dom"
-import { RoomContext } from '../context'
+
 
 
 const Navbar = () => {
-  const {saved} = useContext(RoomContext)
+
   return (
     <div>
         <nav>
@@ -14,9 +14,9 @@ const Navbar = () => {
 
             </Link>
             <Link className="navlink" to="/">Home</Link>
-            <Link className ="navlink" to="/rooms">Rooms</Link>
-            <Link className ="navlink" to="/saved"> <span>saved</span> <span>{saved.length}</span></Link>
-            <Link className ="navlink" to="/video">video</Link>
+            <Link className ="navlink" to="/rooms">Houses</Link>
+            <Link className ="navlink" to="/saved"> <span>Saved Houses</span></Link>
+      
    
         </nav>
         <hr />

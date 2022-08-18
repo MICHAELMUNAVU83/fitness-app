@@ -1,7 +1,7 @@
 import React, { useState, useContext, useEffect } from "react";
 import { RoomContext } from "../context";
 import items from "../data";
-import { Link, useParams } from "react-router-dom";
+import {  useParams } from "react-router-dom";
 import { FcCheckmark } from "react-icons/fc";
 import { FaUserCircle } from "react-icons/fa";
 import { MdSaveAlt } from "react-icons/md";
@@ -25,7 +25,7 @@ const SingleRoom = () => {
   const postComment = async (e) => {
     e.preventDefault();
     const fetchcomment = await fetch(
-      "https://us-central1-involvement-api.cloudfunctions.net/capstoneApi/apps/IXnHl2tjtXcuTuHAlzzN/comments",
+      "https://us-central1-involvement-api.cloudfunctions.net/capstoneApi/apps/UWjx9gCLF7qVtXnxcdP1/comments",
       {
         method: "POST",
         headers: { "Content-Type": "application/json" },
@@ -36,27 +36,25 @@ const SingleRoom = () => {
         }),
       }
     );
-
-    const fetchedComment = await fetchcomment.text();
+    console.log(fetchcomment)
     setUser(" ");
     setComment(" ");
     getComment();
   };
   const getComment = async () => {
     const getcomment = await fetch(
-      `https://us-central1-involvement-api.cloudfunctions.net/capstoneApi/apps/IXnHl2tjtXcuTuHAlzzN/comments/?item_id=${params.id}`
+      `https://us-central1-involvement-api.cloudfunctions.net/capstoneApi/apps/UWjx9gCLF7qVtXnxcdP1/comments/?item_id=${params.id}`
     );
     const gotComment = await getcomment.json();
     setAllComments(gotComment);
   };
   useEffect(() => {
-    getComment();
-  }, [allComments.length]);
-  // useEffect(() => {
-  //   if (allComments.length > 0) {
-  //     getComment();
-  //   }
-  // }, [allComments.length]);
+    
+      getComment();
+
+    
+  });
+
   const detailsBanner = items.map(
     (item) =>
       item.item_id === params.id && (
@@ -64,6 +62,7 @@ const SingleRoom = () => {
           <img
             className="details-banner-img"
             src={item.images[3]}
+            key={item.item_id}
             alt="details banner"
           />
           <div className="details-banner-inner">
@@ -192,12 +191,12 @@ const SingleRoom = () => {
       </div>
       <div className="post-comment-div">
         <button type="button" className="postComment" onClick={postComment}>
-          POST COMMENT
+          POST REVIEW
         </button>
       </div>
     </div>
   );
-
+ 
   const lala =
     allComments.length > 0 &&
     allComments.map((each, index) => (

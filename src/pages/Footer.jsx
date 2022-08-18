@@ -12,10 +12,10 @@ function Footer() {
       <footer>
         <div className="travelbuddy">
           <span className="travel">
-            TRAVEL 
+            TRANCE
           </span>
           <span className="buddy">
-            buddy
+           homes
             </span>
         </div>
         <div>

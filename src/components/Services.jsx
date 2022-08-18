@@ -1,5 +1,7 @@
 import React from "react";
-import { FaCocktail, FaHiking, FaShuttleVan, FaBeer } from "react-icons/fa";
+import {FaFileContract, FaRegMoneyBillAlt } from "react-icons/fa";
+import {GiHouse } from "react-icons/gi";
+import {MdSupportAgent } from "react-icons/md";
 
 const Services = () => {
   return (
@@ -8,20 +10,20 @@ const Services = () => {
       <div className="service-line"></div>
       <div className="four-services-div">
         <div className="each-service">
-          <i> <FaCocktail /></i>
-          <p>"Lorem ipsum dolor sit amet, consectetur adipiscing eli</p>
+          <i> <GiHouse /></i>
+          <p>Schedule with our Agents A Site Visit to your next Home</p>
         </div>
         <div className="each-service">
-         <i><FaHiking /></i> 
-          <p>"Lorem ipsum dolor sit amet, consectetur adipiscing eli</p>
+         <i><FaFileContract /></i> 
+          <p>Issuance of Valid and Original Title Deeds after Purchase of a house</p>
         </div>
         <div className="each-service">
-          <i><FaShuttleVan /> </i>
-          <p>"Lorem ipsum dolor sit amet, consectetur adipiscing eli</p>
+          <i><MdSupportAgent /> </i>
+          <p>Call in Anytime and have a chat with our Agents</p>
         </div>
         <div className="each-service">
-          <i> <FaBeer /></i>
-          <p>"Lorem ipsum dolor sit amet, consectetur adipiscing eli</p>
+          <i> <FaRegMoneyBillAlt /></i>
+          <p>Pay a fee only after you have found the Perfect House </p>
         </div>
       </div>
     </div>

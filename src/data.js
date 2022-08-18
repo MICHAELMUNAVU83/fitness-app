@@ -15,7 +15,7 @@ import img10 from "./images/room-10.jpeg";
 import img11 from "./images/room-11.jpeg";
 import img12 from "./images/room-12.jpeg";
 
-export default [
+const items = [
   {
     item_id: "1",
     saved: false,
@@ -38,7 +38,7 @@ export default [
       "Very Fast Internet Connectivity",
       "Comfortable beds",
     ],
-    images: [img2, room3, room4, img3],
+    images: [img11, room3, room4, img3],
   },
   {
     item_id: "2",
@@ -62,7 +62,7 @@ export default [
       "Very Fast Internet Connectivity",
       "Comfortable beds",
     ],
-    images: [img1, room2, room3, room4],
+    images: [img1, img2, room3, room4],
   },
   {
     item_id: "3",
@@ -594,3 +594,4 @@ export default [
   },
   
 ];
+export default items

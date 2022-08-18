@@ -8,8 +8,8 @@ const Home = () => {
     <div>
       <div className="first-back">
         <div className="first-back-text">
-          <h1 className="travel">TRAVEL</h1>
-          <h1 className="buddy">buddy</h1>
+          <h1 className="travel">TRANCE</h1>
+          <h1 className="buddy">homes</h1>
         </div>
       </div>
       <Services />

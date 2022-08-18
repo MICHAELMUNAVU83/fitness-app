@@ -1,4 +1,4 @@
-import React , {useContext , useState} from 'react'
+import React , {useContext } from 'react'
 import { RoomContext } from '../context'
 import {Link} from "react-router-dom";
 
@@ -9,7 +9,7 @@ function SavedHouses() {
     if(saved.length === 0){
       
       return(
-        <div className="no-houses-div">
+        <div key="no-houses" className="no-houses-div">
           <h3>NO HOUSES SAVED YET</h3></div>
         
       )

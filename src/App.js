@@ -12,7 +12,6 @@ import {
   
 } from "react-router-dom";
 import SavedHouses from "./pages/SavedHouses";
-import Video from "./pages/Video";
 
 function App() {
   return (
@@ -24,8 +23,6 @@ function App() {
           <Route path="/rooms" element={<Rooms />} />
           <Route path="/saved" element={<SavedHouses />} />
           <Route path="/rooms/:id" element={<SingleRoom />} />
-          <Route path="/video" element={<Video />} />
-
           <Route path="*" element={<Error/>} />
         </Routes>
       </Router>
